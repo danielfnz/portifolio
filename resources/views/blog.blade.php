@@ -22,11 +22,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 	<!-- //for-mobile-apps -->
 	<!-- js -->
-		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="public/js/jquery.min.js"></script>
 	<!-- js -->
 	<!-- start-smooth-scrolling -->
-		<script type="text/javascript" src="js/move-top.js"></script>
-		<script type="text/javascript" src="js/easing.js"></script>
+		<script type="text/javascript" src="public/js/move-top.js"></script>
+		<script type="text/javascript" src="public/js/easing.js"></script>
 		<script type="text/javascript">
 			jQuery(document).ready(function($) {
 				$(".scroll").click(function(event){		
@@ -43,10 +43,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <div class="banner page-head" id="home">
 	<div class="container"> 
 		<div class="top-header row">
-			<script src="js/classie.js"></script>
+			<script src="public/js/classie.js"></script>
 			<!--top-nav---->
 			<div class="logo">
-				<a href="index.html"><img src="images/logo.png" alt=""/></a>
+				<a href="index.html"><img src="public/images/logo.png" alt=""/></a>
 			</div>
 			<div class="top-nav">
 				<div class="nav-icon">
@@ -107,11 +107,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		<div class="container">
 			<div class="sam-head text-center">
 				<h3>OUR BLOG</h3>
-				<div class="strip text-center"><img src="images/blog.png" alt=" "/></div>
+				<div class="strip text-center"><img src="public/images/blog.png" alt=" "/></div>
 			</div>
 			<div class="col-md-8 sample-page-left" >
 				<div class="sample-page-info">
-					<img src="images/123.jpg" alt=""/>
+					<img src="public/images/123.jpg" alt=""/>
 					<h5>CONDIMENTUM FRINGILLA, FRINGILLA CONDIMENTUM,FINIBUS BONORUM MALORUM, DONEC UT QUAM LIGULA, SED NISI LOBORTIS.</h5>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  
 						Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, 
@@ -134,7 +134,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					<div class="admin-text">
 						<h5>Written By Admin</h5>
 						<div class="admin-text-left">
-							<a href="#"><img src="images/icon3.png" alt=""/></a>
+							<a href="#"><img src="public/images/icon3.png" alt=""/></a>
 						</div>
 						<div class="admin-text-right">
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,There are many variations of passages of Lorem Ipsum available, 
@@ -147,7 +147,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						<h4>RESPONSES</h4>
 						<div class="response-info">
 							<div class="response-text-left">
-								<a href="#"><img src="images/icon3.png" alt=""/></a>
+								<a href="#"><img src="public/images/icon3.png" alt=""/></a>
 								<h5><a href="#">Admin</a></h5>
 							</div>
 							<div class="response-text-right">
@@ -162,7 +162,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						</div>		
 						<div class="response-info">
 							<div class="response-text-left">
-								<a href="#"><img src="images/icon3.png" alt=""/></a>
+								<a href="#"><img src="public/images/icon3.png" alt=""/></a>
 								<h5><a href="#">Admin</a></h5>
 							</div>
 							<div class="response-text-right">
@@ -204,7 +204,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					<h4>RECENT POSTS</h4>
 					<div class="recent-posts-info">
 						<div class="posts-left">
-							<a href="#"> <img src="images/img21.jpg" alt=""/> </a>
+							<a href="#"> <img src="public/images/img21.jpg" alt=""/> </a>
 						</div>
 						<div class="posts-right">
 							<label>MARCH 5, 2015</label>
@@ -218,7 +218,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					</div>	
 					<div class="recent-posts-info">
 						<div class="posts-left">
-							<a href="#"> <img src="images/img20.jpg" alt=""/></a>
+							<a href="#"> <img src="public/images/img20.jpg" alt=""/></a>
 						</div>
 						<div class="posts-right">
 							<label>MARCH 1, 2015</label>
@@ -235,7 +235,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					<h4>RECENT COMMENTS</h4>
 					<div class="comments-info">
 						<div class="cmnt-icon-left">
-							<a href="#"><img src="images/icon3.png" alt=""/></a>
+							<a href="#"><img src="public/images/icon3.png" alt=""/></a>
 						</div>
 						<div class="cmnt-icon-right">
 							<p>MARCH 1, 2015</p>
@@ -247,7 +247,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					</div>
 					<div class="comments-info">
 						<div class="cmnt-icon-left">
-							<a href="#"><img src="images/icon3.png" alt=""/></a>
+							<a href="#"><img src="public/images/icon3.png" alt=""/></a>
 						</div>
 						<div class="cmnt-icon-right">
 							<p>MARCH 1, 2015</p>
@@ -259,7 +259,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					</div>
 					<div class="comments-info">
 						<div class="cmnt-icon-left">
-							<a href="#"><img src="images/icon3.png" alt=""/></a>
+							<a href="#"><img src="public/images/icon3.png" alt=""/></a>
 						</div>
 						<div class="cmnt-icon-right">
 							<p>MARCH 1, 2015</p>
