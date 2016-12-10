@@ -18,6 +18,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     <!-- for-mobile-apps -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="description" content="Meu portifolio profissional. Aqui você descobrir um pouco sobre meu trabalho. Daniel Fnz" />
         <meta name="keywords" content="Daniel Leonardo, Daniel Leonardo de Souza, Daniel Leonardo de Souza Teixeira, Desenvolvedor mobile, desenvolvedor de aplicaivos,
         desenvolvedor android, desenvolvedor ios, programador, desenvolvedor web, rubiataba, jatai, UFG, Jataí" />
         <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
