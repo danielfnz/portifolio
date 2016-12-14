@@ -13,8 +13,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
     <!--//fonts-->
 
-        <link href="{{ URL::asset('public/css/bootstrap.css') }}" rel="stylesheet" type="text/css" media="all" />
-        <link href="{{ URL::asset('public/css/style.css') }}" rel="stylesheet" type="text/css" media="all" />
+        <link href="{{ URL::asset('css/bootstrap.css') }}" rel="stylesheet" type="text/css" media="all" />
+        <link href="{{ URL::asset('css/style.css') }}" rel="stylesheet" type="text/css" media="all" />
     <!-- for-mobile-apps -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -25,11 +25,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
     <!-- //for-mobile-apps -->
     <!-- js -->
-        <script type="text/javascript" src="{{ URL::asset('public/js/jquery.min.js') }}"></script>
+        <script type="text/javascript" src="{{ URL::asset('js/jquery.min.js') }}"></script>
     <!-- js -->
     <!-- start-smooth-scrolling -->
-        <script type="text/javascript" src="{{ URL::asset('public/js/move-top.js') }}"></script>
-        <script type="text/javascript" src="{{ URL::asset('public/js/easing.js') }}"></script>
+        <script type="text/javascript" src="{{ URL::asset('js/move-top.js') }}"></script>
+        <script type="text/javascript" src="{{ URL::asset('js/easing.js') }}"></script>
         <script type="text/javascript">
             jQuery(document).ready(function($) {
                 $(".scroll").click(function(event){     
@@ -49,7 +49,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             <script src="public/js/classie.js"></script>
             <!--top-nav---->
             <div class="logo">
-                <a href="index.html"><img src="public/images/logo.png" alt=""/></a>
+                <a href="index.html"><img src="images/logo.png" alt=""/></a>
             </div>
             <div class="top-nav">
                 <div class="nav-icon">
@@ -61,13 +61,13 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                             <div class="form_content">
                                 <div class="menu_box_list">
                                     <ul>
-                                        <li><a class="scroll" href="#home"><span>home</span></a></li>
-                                        <li><a class="scroll" href="#about"><span>about</span></a></li>
-                                        <li><a class="scroll" href="#services"><span>services</span></a></li>
+                                        <li><a class="scroll" href="#home"><span>inicio</span></a></li>
+                                        <li><a class="scroll" href="#about"><span>sobre mim</span></a></li>
+                                        <li><a class="scroll" href="#services"><span>serviços</span></a></li>
                                         <li><a class="scroll" href="#portfolio"><span>portfolio</span></a></li>
-                                        <li><a class="scroll" href="#testimonial"><span>Testimonial</span></a></li>
+                                        <li><a class="scroll" href="#testimonial"><span>testemunhos</span></a></li>
                                         <li><a class="scroll" href="#blog"><span>blog</span></a></li>
-                                        <li><a class="scroll" href="#contact"><span>Contact</span></a></li>
+                                        <li><a class="scroll" href="#contact"><span>fale comigo</span></a></li>
                                         <div class="clearfix"> </div>
                                     </ul>
                                 </div>
@@ -103,7 +103,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         </div>
         <div class="banner-info">
             <div class="banner-left">
-                <img src="public/images/1.png" alt=""/>
+                <img src="images/1.png" alt=""/>
             </div>
             <div class="banner-right">
                 <h1>Daniel Leonardo</h1>
@@ -120,7 +120,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <div class="about text-center" id="about">
     <div class="container">
         <h3>SOBRE MIM</h3>
-        <div class="strip text-center"><img src="public/images/about.png" alt=" "/></div>
+        <div class="strip text-center"><img src="images/about.png" alt=" "/></div>
         <p>Dyin' ain't much of a livin', boy. here. put that in your report!" and "i may have found 
         a way out of here. you want a guarantee, buy a toaster. here. put that in your report!" and 
         "i may have found a way out of here. this is the ak-47 assault rifle, the preferred weapon of 
@@ -145,7 +145,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <div class="my-skills text-center">
     <div class="container">
         <h3>HABILIDADES</h3>
-        <div class="strip text-center"><img src="public/images/skill.png" alt=" "/></div>
+        <div class="strip text-center"><img src="images/skill.png" alt=" "/></div>
         <div class="skill-grids">
                     <div class="col-md-2 skills-grid text-center">
                         <div class="circle" id="circles-1"></div>
@@ -172,10 +172,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                         <p>Framework Laravel</p>
                     </div>
                     <div class="clearfix"> </div>
-                 <script type="text/javascript" src="public/js/circles.js"></script>
+                 <script type="text/javascript" src="js/circles.js"></script>
                              <script>
                                 var colors = [
-                                        ['#6ed4c0', '#ffffff'], ['#6ed4c0', '#ffffff'], ['#6ed4c0', '#ffffff'], ['#6ed4c0', '#ffffff'], ['#6ed4c0', '#ffffff'], ['#6ed4c0', '#ffffff']
+                                        ['#39abf0', '#ffffff'], ['#39abf0', '#ffffff'], ['#39abf0', '#ffffff'], ['#39abf0', '#ffffff'], ['#39abf0', '#ffffff'], ['#39abf0', '#ffffff']
                                     ];
                                 for (var i = 1; i <= 7; i++) {
                                     var child = document.getElementById('circles-' + i),
@@ -206,7 +206,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         <div class="edu-info">
             <h3>FORMAÇÃO</h3>
         </div>
-        <div class="strip text-center"><img src="public/images/edu.png" alt=" "/></div>
+        <div class="strip text-center"><img src="images/edu.png" alt=" "/></div>
         <div class="edu-grids">
             <div class="col-md-6 edu-grid">
                 <p>2013 - 2016</p><span>Graduação</span>
@@ -224,7 +224,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             </div>
             <div class="col-md-6 edu-grid">
                 <p>2016 - 2017</p><span>Cursando</span>
-                <img src="public/images/arrow.png" alt=""/>
+                <img src="images/arrow.png" alt=""/>
                 <div class="edu-border">
                     <div class="edu-grid-master">
                         <h3>Full Stack Web Developer Nanodegree</h3>
@@ -250,7 +250,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         <div class="work-info">
             <h3>WORK EXPERIENCE</h3>
         </div>
-        <div class="strip text-center"><img src="public/images/work.png" alt=" "/></div>
+        <div class="strip text-center"><img src="images/work.png" alt=" "/></div>
         <div class="work-grids">
             <div class="col-md-4 w-grid">
                 <div class="work-grid">
@@ -304,7 +304,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         <div class="ser-info">
             <h3>SERVIÇOS</h3>
         </div>
-        <div class="strip text-center"><img src="public/images/ser.png" alt=" "/></div>
+        <div class="strip text-center"><img src="images/ser.png" alt=" "/></div>
         <div class="ser-grids">
             <div class="col-md-6 ser-grid">
                 <div class="ser-imagea"></div>
@@ -336,7 +336,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <div class="gallery-section text-center" id="portfolio">
     <div class="container">
         <h3>PORTFOLIO</h3>
-        <div class="strip text-center"><img src="public/images/port.png" alt=" "/></div>
+        <div class="strip text-center"><img src="images/port.png" alt=" "/></div>
         <p>You think water moves fast? You should see ice. It moves like it has a mind. 
         Like it knows it killed the world once and got a taste for murder. After the avalanche, 
         it took us a week to climb out. Now, I don't know exactly when we turned on each other, 
@@ -346,7 +346,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         <div class="gallery-grids">
             <div class="top-gallery">
                 <div class="col-md-4 gallery-grid gallery1">
-                    <a href="images/p1.jpg" class="swipebox"><img src="public/images/p1.jpg" class="img-responsive" alt="/">
+                    <a href="images/p1.jpg" class="swipebox"><img src="images/p1.jpg" class="img-responsive" alt="/">
                         <div class="textbox">
                             <h4>Project Name</h4>
                             <p>WEB DESIGN</p>
@@ -354,7 +354,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                         </div>
                 </div></a>
                 <div class="col-md-4 gallery-grid gallery1">
-                    <a href="images/p2.jpg" class="swipebox"><img src="public/images/p2.jpg" class="img-responsive" alt="/">
+                    <a href="images/p2.jpg" class="swipebox"><img src="images/p2.jpg" class="img-responsive" alt="/">
                         <div class="textbox">
                             <h4>Project Name</h4>
                             <p>WEB DESIGN</p>
@@ -362,7 +362,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                         </div>
                 </div></a>
                 <div class="col-md-4 gallery-grid gallery1">
-                    <a href="images/p3.jpg" class="swipebox"><img src="public/images/p3.jpg" class="img-responsive" alt="/">
+                    <a href="images/p3.jpg" class="swipebox"><img src="images/p3.jpg" class="img-responsive" alt="/">
                         <div class="textbox">
                             <h4>Project Name</h4>
                             <p>WEB DESIGN</p>
@@ -370,7 +370,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                         </div>
                 </div></a>
                 <div class="col-md-4 gallery-grid gallery1">
-                    <a href="images/p4.jpg" class="swipebox"><img src="public/images/p4.jpg" class="img-responsive" alt="/">
+                    <a href="images/p4.jpg" class="swipebox"><img src="images/p4.jpg" class="img-responsive" alt="/">
                         <div class="textbox">
                             <h4>Project Name</h4>
                             <p>WEB DESIGN</p>
@@ -378,7 +378,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                         </div>
                 </div></a>
                 <div class="col-md-4 gallery-grid gallery1">
-                    <a href="images/p5.jpg" class="swipebox"><img src="public/images/p5.jpg" class="img-responsive" alt="/">
+                    <a href="images/p5.jpg" class="swipebox"><img src="images/p5.jpg" class="img-responsive" alt="/">
                         <div class="textbox">
                             <h4>Project Name</h4>
                             <p>WEB DESIGN</p>
@@ -386,7 +386,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                         </div>
                 </div></a>
                 <div class="col-md-4 gallery-grid gallery1">
-                    <a href="images/p6.jpg" class="swipebox"><img src="public/images/p6.jpg" class="img-responsive" alt="/">
+                    <a href="images/p6.jpg" class="swipebox"><img src="images/p6.jpg" class="img-responsive" alt="/">
                         <div class="textbox">
                             <h4>Project Name</h4>
                             <p>WEB DESIGN</p>
@@ -396,7 +396,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                 <div class="clearfix"> </div>
             </div>
                 <link rel="stylesheet" href="css/swipebox.css">
-                <script src="public/js/jquery.swipebox.min.js"></script> 
+                <script src="js/jquery.swipebox.min.js"></script> 
                     <script type="text/javascript">
                         jQuery(function($) {
                             $(".swipebox").swipebox();
@@ -410,41 +410,41 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!-- <div class="process text-center">
     <div class="container">
         <h3>PROCESS</h3>
-        <div class="strip text-center"><img src="public/images/pro.png" alt=" "/></div>
+        <div class="strip text-center"><img src="images/pro.png" alt=" "/></div>
         <div class="process-girds">
             <div class="col-md-2 process-pad">
                 <div class="process-gird">
                     <div class="process-imagea"></div>
                     <p>IDEA</p>
-                    <img src="public/images/6.png" alt=""/>
+                    <img src="images/6.png" alt=""/>
                 </div>
             </div>
             <div class="col-md-2 process-pad">
                 <div class="process-gird">
                     <div class="process-imageb"></div>
                     <p>CONCEPT</p>
-                    <img class="pro-imga" src="public/images/6.png" alt=""/>
+                    <img class="pro-imga" src="images/6.png" alt=""/>
                 </div>
             </div>
             <div class="col-md-2 process-pad">
                 <div class="process-gird">
                     <div class="process-imagec"></div>
                     <p>DESIGN</p>
-                    <img class="pro-img" src="public/images/6.png" alt=""/>
+                    <img class="pro-img" src="images/6.png" alt=""/>
                 </div>
             </div>
             <div class="col-md-2 process-pad">
                 <div class="process-gird">
                     <div class="process-imaged"></div>
                     <p>DEVELOP</p>
-                    <img class="pro-imgb" src="public/images/6.png" alt=""/>
+                    <img class="pro-imgb" src="images/6.png" alt=""/>
                 </div>
             </div>
             <div class="col-md-2 process-pad">
                 <div class="process-gird">
                     <div class="process-imagee"></div>
                     <p>TEST</p>
-                    <img src="public/images/6.png" alt=""/>
+                    <img src="images/6.png" alt=""/>
                 </div>
             </div>
             <div class="col-md-2 process-pad">
@@ -463,9 +463,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <div class="testimonials" id="testimonial">
     <div class="container">
         <h3>TESTEMUNHOS</h3>
-        <div class="strip text-center"><img src="public/images/test.png" alt=" "/></div>
+        <div class="strip text-center"><img src="images/test.png" alt=" "/></div>
             <!-- responsiveslides -->
-                    <script src="public/js/responsiveslides.min.js"></script>
+                    <script src="js/responsiveslides.min.js"></script>
                         <script>
                             // You can also use "$(window).load(function() {"
                             $(function () {
@@ -490,9 +490,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                     <ul class="rslides" id="slider3">
                         <li>
                             <div class="test-banner">
-                                <img class="quoa" src="public/images/quo2.png" alt=""/>
+                                <img class="quoa" src="images/quo2.png" alt=""/>
                                 <div class="test-left">
-                                    <img src="public/images/7.png" alt=""/>
+                                    <img src="images/7.png" alt=""/>
                                 </div>
                                 <div class="test-right">
                                     <p>However unreal it may seem, we are connected, 
@@ -500,14 +500,14 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                                     <h4>Sam L. J. - Pulp Fiction</h4>
                                 </div>
                                 <div class="clearfix"></div>
-                                <img class="quo" src="public/images/quo1.png" alt=""/>
+                                <img class="quo" src="images/quo1.png" alt=""/>
                             </div>
                         </li>
                         <li>
                             <div class="test-banner">
-                                <img class="quoa" src="public/images/quo2.png" alt=""/>
+                                <img class="quoa" src="images/quo2.png" alt=""/>
                                 <div class="test-left">
-                                    <img src="public/images/eee.png" alt=""/>
+                                    <img src="images/eee.png" alt=""/>
                                 </div>
                                 <div class="test-right">
                                     <p>However unreal it may seem, we are connected, 
@@ -515,7 +515,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                                     <h4>Sam L. J. - Pulp Fiction</h4>
                                 </div>
                                 <div class="clearfix"></div>
-                                <img class="quo" src="public/images/quo1.png" alt=""/>
+                                <img class="quo" src="images/quo1.png" alt=""/>
                             </div>
                         </li>
                     </ul>
@@ -532,17 +532,17 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         <div class="client-grids">
             <div class="col-md-4 cl-grid">
                 <div class="client-grid">
-                    <img src="public/images/10.png" alt=""/>
+                    <img src="images/10.png" alt=""/>
                 </div>
             </div>
             <div class="col-md-4 cl-grid">
                 <div class="client-grid">
-                    <img src="public/images/11.png" alt=""/>
+                    <img src="images/11.png" alt=""/>
                 </div>
             </div>
             <div class="col-md-4 cl-grid">
                 <div class="client-grid">
-                    <img src="public/images/12.png" alt=""/>
+                    <img src="images/12.png" alt=""/>
                 </div>
             </div>
             <div class="clearfix"></div>
@@ -556,12 +556,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     <div class="container">
         <div class="blog-info text-center">
             <h3>BLOG</h3>
-            <div class="strip text-center"><img src="public/images/blog.png" alt=" "/></div>
+            <div class="strip text-center"><img src="images/blog.png" alt=" "/></div>
         </div>
         <div class="blog-grids">
             <div class="col-md-4 blog-text-info">
                 <div class="blog-grid">
-                    <a href="single.html"><img src="public/images/a.jpg" alt=""/></a>
+                    <a href="single.html"><img src="images/a.jpg" alt=""/></a>
                     <div class="blog-text">
                         <a href="single.html">Nature is lethal but it doesn't hold a candle to man.</a>
                         <div class="stripa"></div>
@@ -569,12 +569,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                         and viruses differently than mine. You don't get sick, I do.</p>
                     </div>
                 
-                    <div class="blog-para">
-                            <ul>
-                                <li><a href="#">3 Comments</a></li>
-                                <li><a href="#">8 Share</a></li>
-                            </ul>
-                    </div>  
+            
                     <div class="blog-pos">
                         <p>5<span>May</span></p>
                     </div>
@@ -582,7 +577,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             </div>
             <div class="col-md-4 blog-text-info">
                 <div class="blog-grid">
-                    <a href="single.html"><img src="public/images/b.jpg" alt=""/></a>
+                    <a href="single.html"><img src="images/b.jpg" alt=""/></a>
                     <div class="blog-text">
                         <a href="single.html">Nature is lethal but it doesn't hold a candle to man.</a>
                         <div class="stripa"></div>
@@ -590,12 +585,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                         and viruses differently than mine. You don't get sick, I do.</p>
                     </div>
                 
-                    <div class="blog-para">
-                            <ul>
-                                <li><a href="#">3 Comments</a></li>
-                                <li><a href="#">8 Share</a></li>
-                            </ul>
-                    </div>
+    
                     <div class="blog-pos">
                         <p>5<span>May</span></p>
                     </div>
@@ -603,7 +593,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             </div>
             <div class="col-md-4 blog-text-info">
                 <div class="blog-grid">
-                    <a href="single.html"><img src="public/images/c.jpg" alt=""/></a>
+                    <a href="single.html"><img src="images/c.jpg" alt=""/></a>
                     <div class="blog-text">
                         <a href="single.html">Nature is lethal but it doesn't hold a candle to man.</a>
                         <div class="stripa"></div>
@@ -611,80 +601,13 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                         and viruses differently than mine. You don't get sick, I do.</p>
                     </div>
                 
-                    <div class="blog-para">
-                            <ul>
-                                <li><a href="#">3 Comments</a></li>
-                                <li><a href="#">8 Share</a></li>
-                            </ul>
-                    </div>
+    
                     <div class="blog-pos">
                         <p>5<span>May</span></p>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-4 blog-text-info">
-                <div class="blog-grid">
-                    <a href="single.html"><img src="public/images/a.jpg" alt=""/></a>
-                    <div class="blog-text">
-                        <a href="single.html">Nature is lethal but it doesn't hold a candle to man.</a>
-                        <div class="stripa"></div>
-                        <p>Your bones don't break, mine do. That's clear. Your cells react to bacteria 
-                        and viruses differently than mine. You don't get sick, I do.</p>
-                    </div>
-                
-                    <div class="blog-para">
-                            <ul>
-                                <li><a href="#">3 Comments</a></li>
-                                <li><a href="#">8 Share</a></li>
-                            </ul>
-                    </div>
-                    <div class="blog-pos">
-                        <p>5<span>May</span></p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 blog-text-info">
-                <div class="blog-grid">
-                    <a href="single.html"><img src="public/images/b.jpg" alt=""/></a>
-                    <div class="blog-text">
-                        <a href="single.html">Nature is lethal but it doesn't hold a candle to man.</a>
-                        <div class="stripa"></div>
-                        <p>Your bones don't break, mine do. That's clear. Your cells react to bacteria 
-                        and viruses differently than mine. You don't get sick, I do.</p>
-                    </div>
-                
-                    <div class="blog-para">
-                            <ul>
-                                <li><a href="#">3 Comments</a></li>
-                                <li><a href="#">8 Share</a></li>
-                            </ul>
-                    </div>
-                    <div class="blog-pos">
-                        <p>5<span>May</span></p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 blog-text-info">
-                <div class="blog-grid">
-                    <a href="single.html"><img src="public/images/c.jpg" alt=""/></a>
-                    <div class="blog-text">
-                        <a href="single.html">Nature is lethal but it doesn't hold a candle to man.</a>
-                        <div class="stripa"></div>
-                        <p>Your bones don't break, mine do. That's clear. Your cells react to bacteria 
-                        and viruses differently than mine. You don't get sick, I do.</p>
-                    </div>
-                
-                    <div class="blog-para">
-                            <ul>
-                                <li><a href="#">3 Comments</a></li>
-                                <li><a href="#">8 Share</a></li>
-                            </ul>
-                    </div>
-                    <div class="blog-pos">
-                        <p>5<span>May</span></p>
-                    </div>
-                </div>
-            </div>
+            </div>           
+
             <div class="clearfix"></div>
         </div>
     </div>
@@ -696,17 +619,15 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     <div class="container">
         <div class="contact-info text-center">
             <h3>FALE COMIGO</h3>
-            <div class="strip text-center"><img src="public/images/con1.png" alt=" "/></div>
+            <div class="strip text-center"><img src="images/con1.png" alt=" "/></div>
         </div>
         <div class="contact-grids">
             <div class="col-md-5 contact-left">
                     <ul>
-                    <li>Rua Jose Manoel Vilela 127 </li>
-                    <li>Jataí, Goiás,BR </li>
-                    <li>64 99965-5333</li>
-                    <li><a href="mailto:daniel.fnz@hotmail.com">daniel.fnz@hotmail.com</a></li>
-                    <li><a href="#">www.danielfnz.com.br</a></li>
-                </ul>
+                    <li><strong>62 98403-7100 (OI)</strong></li>
+                    <li><strong>64 99965-5333 (VIVO)</strong></li>
+                    <li><a href="mailto:daniel.fnz@hotmail.com">contato@danielfnz.com.br</a></li>
+                  </ul>
             </div>
             <div class="col-md-7 contact-right">        
                 <form>
@@ -725,7 +646,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!--resume-->
 <div class="resume text-center">
     <div class="container">
-        <div class="strip text-center"><a href="#"><img src="public/images/down.png" alt=" "/></a></div>
+        <div class="strip text-center"><a href="#"><img src="images/down.png" alt=" "/></a></div>
         <div class="down"><a href="#">Download do meu curriculum</a></div>
     </div>
 </div>

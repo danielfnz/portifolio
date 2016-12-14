@@ -67,7 +67,7 @@ margin-top:50px;
 	left:0px;
  }
 .box_content_center{
-	background:rgba(0, 0, 0, 0.22);
+	background:rgba(255, 255, 255, 0.22);
 }
 a.boxclose{
 	cursor: pointer;
@@ -250,7 +250,7 @@ background: url(../images/icons.png) no-repeat 0px -71px;
 /*--//about--*/
 /*--my skill--*/
 .my-skills{
-	background: #1abc9c;
+	background: #0379c1;
 	padding: 60px 0;
 }
 .my-skills h3{
@@ -302,7 +302,7 @@ margin:0px auto;
 color:#ffffff;
 font-size:18px;
 font-family: 'Lato', sans-serif;
-background:#52edc7;
+background:#0379c1;
 width: 36%;
 padding: 3px 0;
 }
@@ -312,20 +312,20 @@ display:block;
 color:#ffffff;
 font-size:18px;
 font-family: 'Lato', sans-serif;
-background:#4ad7b4;
+background:#025385;
 width: 36%;
 padding: 3px 0;
 }
 .edu-grid-master{
 
-background:#52edc7;
+background:#0379c1;
 padding: 15px 0;
 }
 .edu-grid-master h3{
 font-family: 'Lato', sans-serif;
 margin:0;
 font-size:18px;
-color:#4a4a4a;
+color:#ffffff;
 font-weight:700;
 line-height:1.8em;
 }
@@ -333,7 +333,7 @@ line-height:1.8em;
 font-family: 'Lato', sans-serif;
 margin:10px 0 0 0;
 font-size:18px;
-color:#ffffff;
+color:#000;
 font-weight: 600;
 }
 .edu-grid-info{
@@ -482,9 +482,9 @@ font-weight:700;
 /*--portfolio--*/
 .gallery-section{
 background: url(../images/port-back.jpg) no-repeat 0px 0px;
-	background-size: cover;
 	-webkit-background-size: cover;
-	-moz-background-size: cover;
+	-moz-background-size: cover
+  background-size: cover;;
 	-o-background-size: cover;
 	text-align: center;
 	min-height:1404px;
@@ -519,7 +519,7 @@ top:0;
 left:0;
 -webkit-transform: scale(0);
 transform: scale(0);
-background-color:rgba(82, 237, 199, 0.5);
+background-color:rgba(3, 121, 193, 0.5);
 }
 .gallery1:hover .textbox {
 -webkit-transform: scale(1);
@@ -653,7 +653,7 @@ padding:0 25px;
 /*--//process--*/
 .test-banner {
   background: #ffffff;
-  border-top: 15px solid #52edc7;
+  border-top: 15px solid #0379c1;
   width: 54%;
   margin: 50px auto 0 auto;
   padding: 82px 45px;
@@ -1086,7 +1086,7 @@ position:relative;
   top: 42%;
   left: 14%;
   width: 17.5%;
-  background: #52edc7;
+  background: #0379c1;
   transform: rotate(-46deg);
   -webkit-transform: rotate(-46deg);
   -o-transform: rotate(-46deg);
@@ -1095,12 +1095,12 @@ position:relative;
 /*-- blog --*/
 /*-- contact --*/
 .contact{
-background:#52edc7;
+background:#0379c1;
 padding:60px 0 0 0;
 }
 .contact-info h3 {
   margin: 0;
-  color: #2b2b2b;
+  color: #fff;
   font-size: 36px;
   font-weight: 500;
   letter-spacing: 18px;
@@ -1127,14 +1127,14 @@ padding:0;
 .contact-left ul li{
 list-style-type:none;
 font-size:18px;
-color:#2b2b2b;
+color:#fff;
 font-weight:500;
 line-height:1.8em;
 font-family: 'Lato', sans-serif;
 }
 .contact-left ul li a{
 text-decoration:none;
-color:#2b2b2b;
+color:#fff;
 }
 .contact-left ul li a:hover{
 color:#ffffff;
@@ -1149,7 +1149,7 @@ font-size:20px;
   font-weight: 800;
 }
 .contact-right input[type="text"]:hover,.contact-right textarea:hover {
-border:3px solid #40c4a4;
+border:3px solid #0379c1;
 }
 .contact-right input[type="text"] {
 border:3px solid transparent;
@@ -1181,7 +1181,7 @@ font-family: 'Lato', sans-serif;
 margin-right:0;
 }
 .contact-right form input[type="submit"] {
-color:#2b2b2b;
+color:#fff;
 font-family: 'Lato', sans-serif;
   background: url(../images/mess.png) no-repeat 81px 14px;
   width: 100%;
@@ -1190,10 +1190,10 @@ font-family: 'Lato', sans-serif;
   font-size: 20px;
   font-weight: 800;
   padding: 0;
-  border: 3px solid #2b2b2b;
+  border: 3px solid #fff;
 }
 .contact-right form input[type="submit"]:hover {
- border: 3px solid #ffffff;
+ border: 3px solid #aeaeae;
 }
 .resume{
 background:#eeeeee;
