@@ -348,52 +348,36 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                 <div class="col-md-4 gallery-grid gallery1">
                     <a href="images/p1.jpg" class="swipebox"><img src="images/p1.jpg" class="img-responsive" alt="/">
                         <div class="textbox">
-                            <h4>Project Name</h4>
-                            <p>WEB DESIGN</p>
-                            <div class="button"><a href="images/p1.jpg" class="swipebox">VIEW</a></div>
+                            <h4>Atlas de Histologia</h4>
+                            <p>Desenvolvimento Web+Mobile+Backoffice</p>
+                            <div class="button"><a href="images/p1_full.jpg" class="swipebox">Visualizar</a></div>
                         </div>
                 </div></a>
                 <div class="col-md-4 gallery-grid gallery1">
                     <a href="images/p2.jpg" class="swipebox"><img src="images/p2.jpg" class="img-responsive" alt="/">
                         <div class="textbox">
-                            <h4>Project Name</h4>
-                            <p>WEB DESIGN</p>
-                            <div class="button"><a href="images/p2.jpg" class="swipebox">VIEW</a></div>
+                            <h4>Cardápio RU Jataí</h4>
+                            <p>Desenvolvimento mobile+Backoffice</p>
+                            <div class="button"><a href="images/p2.jpg" class="swipebox">Visualizar</a></div>
                         </div>
                 </div></a>
                 <div class="col-md-4 gallery-grid gallery1">
                     <a href="images/p3.jpg" class="swipebox"><img src="images/p3.jpg" class="img-responsive" alt="/">
                         <div class="textbox">
-                            <h4>Project Name</h4>
-                            <p>WEB DESIGN</p>
-                            <div class="button"><a href="images/p3.jpg" class="swipebox">VIEW</a></div>
+                            <h4>DoeAlimento.org</h4>
+                            <p>Desenvolvimento Android</p>
+                            <div class="button"><a href="images/p3.jpg" class="swipebox">Visualizar</a></div>
                         </div>
                 </div></a>
                 <div class="col-md-4 gallery-grid gallery1">
                     <a href="images/p4.jpg" class="swipebox"><img src="images/p4.jpg" class="img-responsive" alt="/">
                         <div class="textbox">
-                            <h4>Project Name</h4>
-                            <p>WEB DESIGN</p>
-                            <div class="button"><a href="images/p4.jpg" class="swipebox">VIEW</a></div>
+                            <h4>Pedro Candirú</h4>
+                            <p>Desenvolvimento Web</p>
+                            <div class="button"><a href="images/p4_full.jpg" class="swipebox">Visualizar</a></div>
                         </div>
                 </div></a>
-                <div class="col-md-4 gallery-grid gallery1">
-                    <a href="images/p5.jpg" class="swipebox"><img src="images/p5.jpg" class="img-responsive" alt="/">
-                        <div class="textbox">
-                            <h4>Project Name</h4>
-                            <p>WEB DESIGN</p>
-                            <div class="button"><a href="images/p5.jpg" class="swipebox">VIEW</a></div>
-                        </div>
-                </div></a>
-                <div class="col-md-4 gallery-grid gallery1">
-                    <a href="images/p6.jpg" class="swipebox"><img src="images/p6.jpg" class="img-responsive" alt="/">
-                        <div class="textbox">
-                            <h4>Project Name</h4>
-                            <p>WEB DESIGN</p>
-                            <div class="button"><a href="images/p6.jpg" class="swipebox">VIEW</a></div>
-                        </div>
-                </div></a>
-                <div class="clearfix"> </div>
+                      <div class="clearfix"> </div>
             </div>
                 <link rel="stylesheet" href="css/swipebox.css">
                 <script src="js/jquery.swipebox.min.js"></script> 
