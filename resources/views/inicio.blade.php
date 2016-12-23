@@ -134,7 +134,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         <ul>
             <li><a class="fb" href="https://www.facebook.com/danielfnz" target="_blank"></a></li>
             <li><a class="in" href="https://br.linkedin.com/in/danielfnz" target="_blank"></a></li>
-            <li><a class="git" href="https://github.com/fonzaex" target="_blank"></a></li>
+            <li><a class="git" href="https://github.com/danielfnz" target="_blank"></a></li>
             <li><a class="you" href="https://www.youtube.com/channel/UCCTmK_YMstCHs7GZoI0mdpQ" target="_blank"></a></li>
         </ul>
     </div>
