@@ -217,8 +217,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                         <h4>Universidade Federal de Goiás (UFG)</h4>
                     </div>
                     <div class="edu-grid-info">
-                        <h5>This is Photoshop's version Lorem Ipsum. 
-                        Well, the way they make shows is, they make one show.</h5>
+                        <h5>Trabalho de conclusão: Soja3D: Ambiente Virtual para realização de experimentos agronômicos com a cultura da soja </h5>
                     </div>
                 </div>
             </div>
@@ -228,11 +227,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                 <div class="edu-border">
                     <div class="edu-grid-master">
                         <h3>Full Stack Web Developer Nanodegree</h3>
-                        <h4>Udacity</h4>
+                        <h4>Udacity - A Universidade do Vale do Silício</h4>
                     </div>
                     <div class="edu-grid-info">
-                        <h5>This is Photoshop's version Lorem Ipsum. 
-                        Well, the way they make shows is, they make one show.</h5>
+                        <h5>Procuro aprimorar meus conhecimentos em todas as camadas de tecnologia para ser um profissional completo </h5>
                     </div>
                 </div>
             </div>
