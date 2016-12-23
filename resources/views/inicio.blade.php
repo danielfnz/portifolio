@@ -239,63 +239,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     </div>
     
 </div>
-<!--//education-->
-<!--work-->
-<!--<div class="strip-border"><p></p></div>
- <div class="work-experience text-center">
-    
-    <div class="container">
-        <div class="work-info">
-            <h3>WORK EXPERIENCE</h3>
-        </div>
-        <div class="strip text-center"><img src="images/work.png" alt=" "/></div>
-        <div class="work-grids">
-            <div class="col-md-4 w-grid">
-                <div class="work-grid">
-                    <h3>2013 - Now</h3>
-                    <div class="work-grid-info">
-                        <h4>Google</h4>
-                        <h5>Visual Designer</h5>
-                        <p>Now that there is the Tec-9, a crappy spray gun from South Miami. 
-                        This gun is advertised as the most popular gun in American crime. 
-                        Do you believe that shit? It actually says that in the little book 
-                        that comes with it: the most popular gun in</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 w-grid">
-                <div class="work-grid">
-                    <h3>2013 - Now</h3>
-                    <div class="work-grid-info">
-                        <h4>Google</h4>
-                        <h5>Visual Designer</h5>
-                        <p>Now that there is the Tec-9, a crappy spray gun from South Miami. 
-                        This gun is advertised as the most popular gun in American crime. 
-                        Do you believe that shit? It actually says that in the little book 
-                        that comes with it: the most popular gun in</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 w-grid">
-                <div class="work-grid">
-                    <h3>2013 - Now</h3>
-                    <div class="work-grid-info">
-                        <h4>Google</h4>
-                        <h5>Visual Designer</h5>
-                        <p>Now that there is the Tec-9, a crappy spray gun from South Miami. 
-                        This gun is advertised as the most popular gun in American crime. 
-                        Do you believe that shit? It actually says that in the little book 
-                        that comes with it: the most popular gun in</p>
-                    </div>
-                </div>
-            </div>
-            <div class="clearfix"></div>
-        </div>
-    </div>
-</div> -->
-<!--//work-->
 <div class="services-back"></div>
-
 <!--services-->
 <div class="services text-center" id="services">
     <div class="container">
@@ -307,16 +251,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             <div class="col-md-6 ser-grid">
                 <div class="ser-imagea"></div>
                 <h3>Desenvolvimento Web</h3>
-                <p>I'm gonna shoot you in the head
-                then and there. Then I'm gonna shoot 
-                that bitch in the kneecaps.</p>
+                <p>Criação de websites de qualidade que se adequam aos tablets e celulares de maneira eficiente para sua empresa, startup ou pessoal.</p>
             </div>
             <div class="col-md-6 ser-grid">
                 <div class="ser-imaged"></div>
                 <h3>Desenvolvimento Mobile</h3>
-                <p>I'm gonna shoot you in the head
-                then and there. Then I'm gonna shoot 
-                that bitch in the kneecaps.</p>
+                <p>Para solucionar seu problema, ou colocar sua idéia em prática, desenvolvo aplicativos ANDROID e IOS conforme as melhores práticas de programação e usabilidade existentes.</p>
             </div>
     <!--        <div class="col-md-3 ser-grid">
                 <div class="ser-imagec"></div>
