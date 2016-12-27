@@ -536,9 +536,10 @@ transition: all 0.7s ease;
 }
 .textbox h4 {
   font-family: 'Lato', sans-serif;
-  font-size: 22px;
+  font-size: 30px;
+   font-weight: bold;
   color: #000;
-  margin-top: 115px;
+  margin-top: 200px;
 }
 .textbox p {
   font-size: 12px !important;

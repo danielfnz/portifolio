@@ -224,37 +224,38 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             <div class="gallery-grids">
                 <div class="top-gallery">
                     <div class="col-md-6 gallery-grid gallery1">
-                        <a href="images/p1.jpg" ><img src="images/p1.jpg" class="img-responsive" alt="/">
+                        <a href="{{url('/portifolio/atlasdehistologia')}}" ><img src="images/portifolio/atlasdehistologia.jpg" class="img-responsive" alt="/">
                             <div class="textbox">
                                 <h4>Atlas de Histologia</h4>
                                 <p>Desenvolvimento Web+Mobile+Backoffice</p>
-                                <div class="button"><a href="images/p1_full.jpg" >Visualizar</a></div>
+                                <div class="button"><a href="{{url('/portifolio/atlasdehistologia')}}">Visualizar</a></div>
                             </div>
                     </div></a>
-                        <div class="col-md-6 gallery-grid gallery1">
-                            <a href="images/p2.jpg" ><img src="images/p2.jpg" class="img-responsive" alt="/">
-                                <div class="textbox">
-                                    <h4>Cardápio RU Jataí</h4>
-                                    <p>Desenvolvimento mobile+Backoffice</p>
-                                    <div class="button"><a href="images/p2.jpg" >Visualizar</a></div>
-                                </div>
-                            </div></a>
-                            <div class="col-md-6 gallery-grid gallery1">
-                                <a href="images/p3.jpg" ><img src="images/p3.jpg" class="img-responsive" alt="/">
-                                    <div class="textbox">
-                                        <h4>DoeAlimento.org</h4>
-                                        <p>Desenvolvimento Android</p>
-                                        <div class="button"><a href="images/p3.jpg" >Visualizar</a></div>
-                                    </div>
-                                </div></a>
-                                <div class="col-md-6 gallery-grid gallery1">
-                                    <a href="images/p4.jpg" ><img src="images/p4.jpg" class="img-responsive" alt="/">
-                                        <div class="textbox">
-                                            <h4>Pedro Candirú</h4>
-                                            <p>Desenvolvimento Web</p>
-                                            <div class="button"><a href="images/p4_full.jpg" >Visualizar</a></div>
-                                        </div>
-                                    </div></a>
+
+                    <div class="col-md-6 gallery-grid gallery1">
+                        <a href="{{url('/portifolio/pedrocandiru')}}" ><img src="images/portifolio/pedrocandiru.jpg" class="img-responsive" alt="/">
+                            <div class="textbox">
+                                <h4>Pedro Candirú</h4>
+                                <p>Desenvolvimento Web</p>
+                                <div class="button"><a href="{{url('/portifolio/pedrocandiru')}}" >Visualizar</a></div>
+                            </div>
+                        </div></a>
+                    <div class="col-md-6 gallery-grid gallery1">
+                        <a href="{{url('/portifolio/cardapiorujatai')}}" ><img src="images/portifolio/cardapiorujatai.jpg" class="img-responsive" alt="/">
+                            <div class="textbox">
+                                <h4>Cardápio RU Jataí</h4>
+                                <p>Desenvolvimento mobile+Backoffice</p>
+                                <div class="button"><a href="{{url('/portifolio/cardapiorujatai')}}" >Visualizar</a></div>
+                            </div>
+                        </div></a>
+                    <div class="col-md-6 gallery-grid gallery1">
+                        <a href="{{url('/portifolio/doealimento')}}" ><img src="images/portifolio/doealimento.jpg" class="img-responsive" alt="/">
+                            <div class="textbox">
+                                <h4>DoeAlimento.org</h4>
+                                <p>Desenvolvimento Android</p>
+                                <div class="button"><a href="{{url('/portifolio/doealimento')}}"  >Visualizar</a></div>
+                            </div>
+                        </div></a>                    
                 <div class="clearfix"> </div>
                 </div>
             </div>

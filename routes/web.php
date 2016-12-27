@@ -17,3 +17,17 @@ Route::get('/', function () {
 Route::get('/blog', function () {
     return view('blog');
 });
+Route::get('/portifolio/atlasdehistologia', function () {
+    return view('atlasdehistologia');
+});
+Route::get('/portifolio/cardapiorujatai', function () {
+    return view('cardapiorujatai');
+});
+Route::get('/portifolio/doealimento', function () {
+    return view('doealimento');
+});
+Route::get('/portifolio/pedrocandiru', function () {
+    return view('pedrocandiru');
+});
+
+
