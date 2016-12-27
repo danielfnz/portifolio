@@ -18,16 +18,16 @@ Route::get('/blog', function () {
     return view('blog');
 });
 Route::get('/portifolio/atlasdehistologia', function () {
-    return view('atlasdehistologia');
+    return view('portifolio.atlasdehistologia');
 });
 Route::get('/portifolio/cardapiorujatai', function () {
-    return view('cardapiorujatai');
+    return view('portifolio.cardapiorujatai');
 });
 Route::get('/portifolio/doealimento', function () {
-    return view('doealimento');
+    return view('portifolio.doealimento');
 });
 Route::get('/portifolio/pedrocandiru', function () {
-    return view('pedrocandiru');
+    return view('portifolio.pedrocandiru');
 });
 
 
