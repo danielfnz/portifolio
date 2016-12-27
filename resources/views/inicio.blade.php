@@ -98,7 +98,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         <div class="container">
             <h3>SOBRE MIM</h3>
             <div class="strip text-center"><img src="images/about.png" alt=" "/></div>
-            <p>Graduação em andamento em Ciência da Computação pela Universidade Federal de Goias(UFG) com conclusão prevista em 03/2017, Programador com ênfase em Desenvolvimento Web e Mobile, teve experiências com as linguagens C, C#, PHP, JAVA e com frameworks como LARAVEL, AngularJS e Ionic.<br>
+            <p>Graduação em andamento em Ciência da Computação pela Universidade Federal de Goias(UFG) com conclusão prevista em 03/2017, Programador com ênfase em Desenvolvimento Web e Mobile, teve experiências com as linguagens C, C#, PHP, JAVA e com frameworks como LARAVEL, AngularJS e Ionic.
             Atuando ultimamente nos seguintes temas: Simulação 3D de cultivos agroflorestais, desenvolvimento de aplicativos educacionais, desenvolvimento de atlas virtual e ferramentas de verificação de vulnerabilidades em web sites.</p>
                 <ul>
                     <li><a class="fb" href="https://www.facebook.com/danielfnz" target="_blank"></a></li>
@@ -223,36 +223,36 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             <div class="strip text-center"><img src="images/port.png" alt=" "/></div>
             <div class="gallery-grids">
                 <div class="top-gallery">
-                    <div class="col-md-4 gallery-grid gallery1">
-                        <a href="images/p1.jpg" class="swipebox"><img src="images/p1.jpg" class="img-responsive" alt="/">
+                    <div class="col-md-6 gallery-grid gallery1">
+                        <a href="images/p1.jpg" ><img src="images/p1.jpg" class="img-responsive" alt="/">
                             <div class="textbox">
                                 <h4>Atlas de Histologia</h4>
                                 <p>Desenvolvimento Web+Mobile+Backoffice</p>
-                                <div class="button"><a href="images/p1_full.jpg" class="swipebox">Visualizar</a></div>
+                                <div class="button"><a href="images/p1_full.jpg" >Visualizar</a></div>
                             </div>
                     </div></a>
-                        <div class="col-md-4 gallery-grid gallery1">
-                            <a href="images/p2.jpg" class="swipebox"><img src="images/p2.jpg" class="img-responsive" alt="/">
+                        <div class="col-md-6 gallery-grid gallery1">
+                            <a href="images/p2.jpg" ><img src="images/p2.jpg" class="img-responsive" alt="/">
                                 <div class="textbox">
                                     <h4>Cardápio RU Jataí</h4>
                                     <p>Desenvolvimento mobile+Backoffice</p>
-                                    <div class="button"><a href="images/p2.jpg" class="swipebox">Visualizar</a></div>
+                                    <div class="button"><a href="images/p2.jpg" >Visualizar</a></div>
                                 </div>
                             </div></a>
-                            <div class="col-md-4 gallery-grid gallery1">
-                                <a href="images/p3.jpg" class="swipebox"><img src="images/p3.jpg" class="img-responsive" alt="/">
+                            <div class="col-md-6 gallery-grid gallery1">
+                                <a href="images/p3.jpg" ><img src="images/p3.jpg" class="img-responsive" alt="/">
                                     <div class="textbox">
                                         <h4>DoeAlimento.org</h4>
                                         <p>Desenvolvimento Android</p>
-                                        <div class="button"><a href="images/p3.jpg" class="swipebox">Visualizar</a></div>
+                                        <div class="button"><a href="images/p3.jpg" >Visualizar</a></div>
                                     </div>
                                 </div></a>
-                                <div class="col-md-4 gallery-grid gallery1">
-                                    <a href="images/p4.jpg" class="swipebox"><img src="images/p4.jpg" class="img-responsive" alt="/">
+                                <div class="col-md-6 gallery-grid gallery1">
+                                    <a href="images/p4.jpg" ><img src="images/p4.jpg" class="img-responsive" alt="/">
                                         <div class="textbox">
                                             <h4>Pedro Candirú</h4>
                                             <p>Desenvolvimento Web</p>
-                                            <div class="button"><a href="images/p4_full.jpg" class="swipebox">Visualizar</a></div>
+                                            <div class="button"><a href="images/p4_full.jpg" >Visualizar</a></div>
                                         </div>
                                     </div></a>
                 <div class="clearfix"> </div>

@@ -182,6 +182,7 @@ margin:45px 0 0 0;
 color:#888b90;
 font-size:18px;
 font-family: 'Lato', sans-serif;
+text-align: justify;
 line-height:1.8em;
 }
 .about ul{
@@ -488,7 +489,7 @@ background: url(../images/port-back.jpg) no-repeat 0px 0px;
 	-o-background-size: cover;
 	text-align: center;
 	min-height:1404px;
-    padding: 140px 0 0px 0;
+  padding: 140px 0 0px 0;
 }
 #portfolio p {
   font-family: 'Lato', sans-serif;
@@ -506,7 +507,7 @@ background: url(../images/port-back.jpg) no-repeat 0px 0px;
   letter-spacing: 18px;
 }
 .gallery-grid {
-  padding: 0;
+  padding: 10px;
 }
 .gallery1 {
 position:relative;
@@ -1773,7 +1774,7 @@ border:none;
 	  min-height: 78px;
 	}
 	.gallery-section {
-	  min-height: 1319px;
+	  min-height: 1500px;
 	  padding: 115px 0 0px 0;
 	}
 	.services-back {
@@ -1829,7 +1830,7 @@ border:none;
 	  min-height: 66px;
 	}
 	.gallery-section {
-	  min-height: 1294px;
+	  min-height: 1500px;
 	  }
 	.process-back {
 	  min-height: 69px;
@@ -2079,7 +2080,7 @@ border:none;
 	  font-size: 16px;
 	  }
 	.gallery-section {
-	  min-height: 1068px;
+	  min-height: 1250px;
 	}
 	.process h3 {
 	  font-size: 32px;
@@ -2334,7 +2335,7 @@ border:none;
 	}
 	.edu-grid {
 	  float: left;
-	  width: 33.3% !important;
+	  width: 50% !important;
 	}
 	.skills-grid p {
 	  margin: 3px 0 0 0;
@@ -2455,10 +2456,10 @@ border:none;
 	}
 	.gallery-grid {
 	  float: left;
-	  width: 33.3%;
+	  width: 50%;
 	}
 	.gallery-section {
-	  min-height: 893px;
+	  min-height: 1000px;
 	}
 	.textbox h4 {
 	  margin-top: 55px;
@@ -2666,10 +2667,10 @@ border:none;
 	  min-height: 35px;
 	}
 	.edu-grid {
-	  float: left;
-	  width: 32.3% !important;
+	  float: center;
+	  width: 45% !important;
 	  padding: 0;
-	  margin-right: 9px;
+	  margin-right: 30px;
 	}
 	.edu-grid:nth-child(3) {
 	  margin: 0;
@@ -2787,6 +2788,10 @@ border:none;
 	  }
 }
 @media(max-width:480px){
+  .blog-text-info {
+  float: left;
+  width: 100%;
+}
 	.logo {
 	  float: left;
 	  width: 23%;
@@ -3089,7 +3094,7 @@ border:none;
 	  width: 50%;
 	}
 	.gallery-section {
-	  min-height: 1073px;
+	  min-height: 550px;
 	}
 	.textbox h4 {
 	  font-size: 16px;
@@ -3335,7 +3340,7 @@ border:none;
   margin-top: 22px;
 }
 .gallery-section {
-  min-height: 904px;
+  min-height: 500px;
 }
 .process-pad {
   width: 50% !important;
@@ -3373,13 +3378,13 @@ img.pro-imga, img.pro-imgb {
 }
 .test-banner img.quoa {
   position: absolute;
-  top: 55%;
+  top: 60%;
   left: 9%;
 }
 .test-banner img.quo {
   position: absolute;
   top: 79%;
-  left: 37%;
+  left: 90%;
 }
 .test-banner {
   width: 90%;
@@ -3433,7 +3438,7 @@ a.callbacks_nav.callbacks1_nav.prev {
 }
 .contact-right form input[type="submit"] {
   width: 100%;
-  background: url(../images/mess.png) no-repeat 81px 11px;
+  background: url(../images/mess.png) no-repeat 20px 11px;
 }
 .contact {
   padding: 40px 0;
