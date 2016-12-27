@@ -79,7 +79,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             <!--banner-->
             <div class="banner-info">
                 <div class="banner-left">
-                    <img src="images/1.png" alt=""/>
+                    <img src="images/minhaFoto.png" alt=""/>
                 </div>
                 <div class="banner-right">
                     <h1>Daniel Leonardo</h1>
@@ -98,16 +98,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         <div class="container">
             <h3>SOBRE MIM</h3>
             <div class="strip text-center"><img src="images/about.png" alt=" "/></div>
-            <p>Dyin' ain't much of a livin', boy. here. put that in your report!" and "i may have found 
-                a way out of here. you want a guarantee, buy a toaster. here. put that in your report!" and 
-                "i may have found a way out of here. this is the ak-47 assault rifle, the preferred weapon of 
-                your enemy; and it makes a distinctive sound when fired at you, so remember it. this is the ak-47 
-                assault rifle, the preferred weapon of your enemy; and it makes a distinctive sound when fired at 
-                you, so remember it. don't p!ss down my back and tell me it's raining. this is the ak-47 assault 
-                rifle, the preferred weapon of your enemy; and it makes a distinctive sound when fired at you, 
-                so remember it. don't p!ss down my back and tell me it's raining. this is my gun, clyde! man's 
-                gotta know his limitations. ever notice how sometimes you come across somebody you shouldn't have 
-                f**ked with? well, i'm that guy.</p>
+            <p>Graduação em andamento em Ciência da Computação pela Universidade Federal de Goias(UFG) com conclusão prevista em 03/2017, Programador com ênfase em Desenvolvimento Web e Mobile, teve experiências com frameworks como LARAVEL, AngularJS e Ionic e com as linguagens C, C#, PHP e JAVA.<br>
+            Atuando ultimamente nos seguintes temas: Simulação 3D de cultivos agroflorestais, desenvolvimento de aplicativos educacionais, desenvolvimento de atlas virtual e ferramentas de verificação de vulnerabilidades em web sites.</p>
                 <ul>
                     <li><a class="fb" href="https://www.facebook.com/danielfnz" target="_blank"></a></li>
                     <li><a class="in" href="https://br.linkedin.com/in/danielfnz" target="_blank"></a></li>
@@ -149,25 +141,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                 <p>Framework Laravel</p>
             </div>
             <div class="clearfix"> </div>
-            <script>
-                var colors = [
-                ['#39abf0', '#ffffff'], ['#39abf0', '#ffffff'], ['#39abf0', '#ffffff'], ['#39abf0', '#ffffff'], ['#39abf0', '#ffffff'], ['#39abf0', '#ffffff']
-                ];
-                for (var i = 1; i <= 7; i++) {
-                    var child = document.getElementById('circles-' + i),
-                    percentage = 30 + (i * 10);
-
-                    Circles.create({
-                        id:         child.id,
-                        percentage: percentage,
-                        radius:     80,
-                        width:      10,
-                        number:     percentage / 1,
-                        text:       '%',
-                        colors:     colors[i - 1]
-                    });
-                }                        
-            </script>
+            <script type="text/javascript" src="{{ URL::asset('js/habilidades.js') }}"></script>
         </div>
     </div>  
     </section>
@@ -210,8 +184,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                 <div class="clearfix"></div>
             </div>
         </div>
-        </section>
-        <!--services-->
+    </section>
+    <!--services-->
     <div class="services-back"></div>
     <section class="services text-center" id="servicos">
         <div class="container">
