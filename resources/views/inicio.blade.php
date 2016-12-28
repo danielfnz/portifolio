@@ -194,23 +194,22 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         </div>
         <div class="strip text-center"><img src="images/ser.png" alt=" "/></div>
         <div class="ser-grids">
-            <div class="col-md-6 ser-grid">
+            <div class="col-md-4 ser-grid">
                 <div class="ser-imagea"></div>
                 <h3>Desenvolvimento Web</h3>
                 <p>Criação de websites de qualidade que se adequam aos tablets e celulares de maneira eficiente para sua empresa, startup ou pessoal.</p>
             </div>
-            <div class="col-md-6 ser-grid">
+            <div class="col-md-4 ser-grid">
+                <div class="ser-imagec"></div>
+                <h3>Desenvolvimento Desktop</h3>
+                <p>Desenvolvimento de soluções empresariais voltados para computadores, permitindo maior agilidade, organização e redução de custos operacionais</p>
+            </div>
+            <div class="col-md-4 ser-grid">
                 <div class="ser-imaged"></div>
                 <h3>Desenvolvimento Mobile</h3>
                 <p>Para solucionar seu problema, ou colocar sua idéia em prática, desenvolvo aplicativos ANDROID e IOS conforme as melhores práticas de programação e usabilidade existentes.</p>
             </div>
-    <!--    <div class="col-md-3 ser-grid">
-            <div class="ser-imagec"></div>
-            <h3>Mídia Social</h3>
-            <p>I'm gonna shoot you in the head
-            then and there. Then I'm gonna shoot 
-            that bitch in the kneecaps.</p>
-        </div> -->
+ 
         <div class="clearfix"></div>
         </div>
         </div>
