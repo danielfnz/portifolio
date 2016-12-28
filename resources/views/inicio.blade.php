@@ -315,7 +315,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         </div>
         <div class="blog-grids">
             @if ( !$postsrecentes->count() )
-            <h5>Não existem posts publicados ainda!</h5>
+            <h5 style=" text-align: center;">Não existem artigos publicados ainda!</h5>
             @else
             @foreach( $postsrecentes as $postsrecentes )
             <div class="col-md-4 blog-text-info">
@@ -349,6 +349,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             <div class="contact-grids">
                 <div class="col-md-5 contact-left">
                     <ul>
+                      <li><strong>Daniel Leonardo de Souza Teixeira</strong></li>
                         <li><strong>62 98403-7100 (OI)</strong></li>
                         <li><strong>64 99965-5333 (VIVO)</strong></li>
                         <li><a href="mailto:daniel.fnz@hotmail.com">contato@danielfnz.com.br</a></li>
