@@ -18,7 +18,7 @@ Route::get('/inicio', function () {
     return view('inicio');
 });
 Route::get('/blog', function () {
-    return view('blog');
+    return view('blog.inicio');
 });
 Route::get('/portifolio', function () {
     return view('portifolio.portifolio');
