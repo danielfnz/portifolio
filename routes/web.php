@@ -14,8 +14,14 @@
 Route::get('/', function () {
     return view('inicio');
 });
+Route::get('/inicio', function () {
+    return view('inicio');
+});
 Route::get('/blog', function () {
     return view('blog');
+});
+Route::get('/portifolio', function () {
+    return view('portifolio.portifolio');
 });
 Route::get('/portifolio/atlasdehistologia', function () {
     return view('portifolio.atlasdehistologia');

@@ -1,4 +1,5 @@
-@extends('template.blog')
+@extends('template.paginaSimples')
+@section('title', 'Blog')
 
 @section('container')
 	<div class="sample-page">

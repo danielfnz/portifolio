@@ -7,7 +7,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Blog - Daniel Leonardo de Souza Teixeira</title>
+    <title> @yield('title') - Daniel Leonardo de Souza Teixeira</title>
     <!--CSS-->
     <link href="{{ URL::asset('css/bootstrap.css') }}" rel="stylesheet" type="text/css" media="all" />
     <link href="{{ URL::asset('css/style.css') }}" rel="stylesheet" type="text/css" media="all" />
@@ -57,13 +57,13 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                                 <div class="form_content">
                                     <div class="menu_box_list">
                                         <ul>
-                                            <li><a class="scroll" href="#inicio"><span>INICIO</span></a></li>
-                                            <li><a class="scroll" href="#sobremim"><span>SOBRE MIM</span></a></li>
-                                            <li><a class="scroll" href="#servicos"><span>SERVIÇOS</span></a></li>
-                                            <li><a class="scroll" href="#portfolio"><span>PORTFOLIO</span></a></li>
-                                            <li><a class="scroll" href="#testemunhos"><span>TESTEMUNHOS</span></a></li>
+                                            <li><a href="{{url('#inicio')}}"><span>INICIO</span></a></li>
+                                            <li><a href="{{url('/#sobremim')}}"><span>SOBRE MIM</span></a></li>
+                                            <li><a href="{{url('/#servicos')}}"><span>SERVIÇOS</span></a></li>
+                                            <li><a href="{{url('/#portfolio')}}"><span>PORTFOLIO</span></a></li>
+                                            <li><a href="{{url('/#testemunhos')}}"><span>TESTEMUNHOS</span></a></li>
                                             <li><a href="{{url('/blog')}}"><span>BLOG</span></a></li>
-                                            <li><a class="scroll" href="#contato"><span>FALE COMIGO</span></a></li>
+                                            <li><a href="{{url('/#contato')}}"><span>FALE COMIGO</span></a></li>
                                             <div class="clearfix"> </div>
                                         </ul>
                                     </div>

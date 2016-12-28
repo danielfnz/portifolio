@@ -219,7 +219,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     <!--portfolio-->
     <section class="gallery-section text-center" id="portfolio">
         <div class="container">
-            <h3>PORTFOLIO</h3>
+            <h3>PORTFÓLIO</h3>
             <div class="strip text-center"><img src="images/port.png" alt=" "/></div>
             <div class="gallery-grids">
                 <div class="top-gallery">
