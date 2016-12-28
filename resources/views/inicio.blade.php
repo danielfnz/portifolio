@@ -314,53 +314,25 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             <div class="strip text-center"><img src="images/blog.png" alt=" "/></div>
         </div>
         <div class="blog-grids">
+            @if ( !$postsrecentes->count() )
+            <h5>Não existem posts publicados ainda!</h5>
+            @else
+            @foreach( $postsrecentes as $postsrecentes )
             <div class="col-md-4 blog-text-info">
                 <div class="blog-grid">
-                    <a href="single.html"><img src="images/a.jpg" alt=""/></a>
+                    <a href="{{url('/blog/')}}/{{$postsrecentes->slug}}"><img src="{{url('/images/blog')}}/{{$postsrecentes->imagem}}" alt=""/></a>
                     <div class="blog-text">
-                        <a href="single.html">Nature is lethal but it doesn't hold a candle to man.</a>
+                        <a href="{{url('/blog/')}}/{{$postsrecentes->slug}}">{{$postsrecentes->titulo}}</a>
                         <div class="stripa"></div>
-                        <p>Your bones don't break, mine do. That's clear. Your cells react to bacteria 
-                            and viruses differently than mine. You don't get sick, I do.</p>
+                        <p>{!! str_limit($postsrecentes->conteudo, $limit = 100, $end = '....... <a href='.url("/".$postsrecentes->slug).'>Ver artigo completo</a>') !!}</p>
                         </div>
-
-
                         <div class="blog-pos">
-                            <p>5<span>May</span></p>
+                            <p>{{ $postsrecentes->created_at->format('d') }}<span>{{ $postsrecentes->created_at->format('M') }}</span></p>
                         </div>
                     </div>
-            </div>
-            <div class="col-md-4 blog-text-info">
-                    <div class="blog-grid">
-                        <a href="single.html"><img src="images/b.jpg" alt=""/></a>
-                        <div class="blog-text">
-                            <a href="single.html">Nature is lethal but it doesn't hold a candle to man.</a>
-                            <div class="stripa"></div>
-                            <p>Your bones don't break, mine do. That's clear. Your cells react to bacteria 
-                                and viruses differently than mine. You don't get sick, I do.</p>
-                            </div>
-
-
-                            <div class="blog-pos">
-                                <p>5<span>May</span></p>
-                            </div>
-                        </div>
-                </div>
-            <div class="col-md-4 blog-text-info">
-                    <div class="blog-grid">
-                        <a href="single.html"><img src="images/c.jpg" alt=""/></a>
-                        <div class="blog-text">
-                            <a href="single.html">Nature is lethal but it doesn't hold a candle to man.</a>
-                            <div class="stripa"></div>
-                            <p>Your bones don't break, mine do. That's clear. Your cells react to bacteria 
-                                and viruses differently than mine. You don't get sick, I do.</p>
-                            </div>
-                            <div class="blog-pos">
-                                <p>5<span>May</span></p>
-                            </div>
-                        </div>
-                </div>           
-
+                </div>  
+                @endforeach  
+                @endif 
             <div class="clearfix"></div>
         </div>
         </div>

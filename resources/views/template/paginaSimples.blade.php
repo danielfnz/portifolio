@@ -45,7 +45,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		<div class="top-header row">
 				<!--top-nav---->
 			<div class="logo">
-				<a href="/blog"><img src="{{ URL::asset('images/logo.png') }}" alt=""/></a>
+				<a href="/"><img src="{{ URL::asset('images/logo.png') }}" alt=""/></a>
 			</div>
 			<div class="top-nav">
 				<div class="nav-icon">

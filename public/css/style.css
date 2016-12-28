@@ -157,7 +157,7 @@ float:left;
 float:right;
 }
 .border {
-  background: #52edc7;
+  background: #0379c1;
   width: 88%;
   margin: 0 auto;
   padding: 1px;
@@ -385,7 +385,7 @@ left: 40%;
 .work-grid h3{
 margin:0;
 color:#ffffff;
-background:#52edc7;
+background:#0379c1;
 padding: 9px 0;
 font-size: 18px;
 font-weight: 600;
@@ -571,7 +571,7 @@ font-weight:700;
 /*--//portfolio--*/
 /*--process--*/
 .process{
-background:#52edc7;
+background:#0379c1;
   padding: 30px 0 65px 0;
 }
 .process-gird{
@@ -977,7 +977,7 @@ padding:0 0 60px 0;
 background:#eeeeee;
 }
 .strip-line{
-  background: #52edc7;
+  background: #0379c1;
   width: 20%;
   margin: 0 auto;
   padding: 1px;
@@ -1025,7 +1025,7 @@ font-family: 'Lato', sans-serif;
 font-weight:700;
 }
 .blog-grid a:hover{
-color :#52edc7;
+color :#0379c1;
 }
 .stripa{
 background:#dedede;
@@ -1233,7 +1233,7 @@ color:#ffffff;
 font-weight:400;
 }
 .footer p a{
-color:#52edc7;
+color:#0379c1;
 }
 .footer p a:hover{
 color:#ffffff;
@@ -1329,7 +1329,7 @@ background:#dcdcdf;
   	font-size: 20px;
   	font-weight: 500;
 
-  	color:#52edc7;
+  	color:#0379c1;
   	line-height: 1.6em;
 }
 .sample-page-info p{
@@ -1418,7 +1418,7 @@ width:100%;
 	
 }
 .comment-icons ul li a:hover{
-	color:#52edc7;
+	color:#0379c1;
 	text-decoration:none;
 	transition:.5s all;
 }
@@ -1468,7 +1468,7 @@ font-weight:600;
 }
 .category ul li a:hover{
 	transition:.5s all;
-	color:#52edc7;
+	color:#0379c1;
 	text-decoration:none;
 }
 .recent-posts-info {
@@ -1486,7 +1486,7 @@ font-weight:600;
 	margin: 7px 0;
 }
 .posts-right h5 a{	
-	color: #52edc7;
+	color: #0379c1;
 	transition:.5s all;
 	text-decoration:none;
 }
@@ -1526,7 +1526,7 @@ margin: 12px 0 0 0;
 	font-weight: 600;
 }
 .cmnt-icon-right p a {
-  color: #52edc7;
+  color: #0379c1;
  
   text-decoration:none;
 }
@@ -1570,7 +1570,7 @@ margin: 12px 0 0 0;
   text-decoration:none;
 }
 .admin-text-right span a:hover{
-  color: #52edc7;
+  color: #0379c1;
   transition:.5s all;
 }
 .related-posts-grids {
@@ -1608,7 +1608,7 @@ margin: 12px 0 0 0;
 }
 .response-text-left h5 a {
   text-decoration: none;
-  color: #52edc7;
+  color: #0379c1;
 }
 .response-text-left h5 a:hover{
   text-decoration: none;
@@ -1653,7 +1653,7 @@ margin: 12px 0 0 0;
 	font-size: 14px;
 }
 .response-text-right ul li a:hover{
-	color:#52edc7;
+	color:#0379c1;
 	transition:.5s all;
 	text-decoration:none;
 }
@@ -1705,7 +1705,7 @@ margin: 12px 0 0 0;
   border: 3px solid #2b2b2b;
 }
 .coment-form input[type="submit"]:hover{
-	border:3px solid #52edc7;
+	border:3px solid #0379c1;
 }
 /*-- //single-page --*/
 /*-- to-top --*/

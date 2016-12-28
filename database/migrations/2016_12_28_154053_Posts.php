@@ -18,6 +18,8 @@ class Posts extends Migration
             $table->string('titulo');
             $table->text('conteudo');
             $table->string('slug')->unique();
+            $table->string('imagem');
+            $table->boolean('ativo');
             $table->timestamps();
         });
     }

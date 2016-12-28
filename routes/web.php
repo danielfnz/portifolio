@@ -11,15 +11,13 @@
 |
 */
 
-Route::get('/', function () {
-    return view('inicio');
-});
+Route::resource('/','HomeController');
+
 Route::get('/inicio', function () {
     return view('inicio');
 });
-Route::get('/blog', function () {
-    return view('blog.inicio');
-});
+Route::resource('/blog','PostsController');
+
 Route::get('/portifolio', function () {
     return view('portifolio.portifolio');
 });
