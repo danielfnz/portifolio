@@ -350,8 +350,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                 <div class="col-md-5 contact-left">
                     <ul>
                       <li><strong>Daniel Leonardo de Souza Teixeira</strong></li>
-                        <li><strong>(62) 98403-7100 (OI)</strong></li>
-                        <li><strong>(64) 99965-5333 (VIVO)</strong></li>
+                        <li>(62) 98403-7100 (OI)</li>
+                        <li>(64) 99965-5333 (VIVO)</li>
                         <li><a href="mailto:daniel.fnz@hotmail.com">contato@danielfnz.com.br</a></li>
                     </ul>
                 </div>
