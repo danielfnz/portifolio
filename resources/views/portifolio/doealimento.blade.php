@@ -12,7 +12,7 @@
 			<div class="sample-page-info">
 				<h5>Trabalho Realizado</h5>
 				<p>*Desenvolvimento Android</p><br>
-			<h5>Download</h5>
+				<h5>Download</h5>
 				<p><a href="https://play.google.com/store/apps/details?id=apprumo.com.doealimentoorg">GooglePlay</a></p>
 
 			</div>	

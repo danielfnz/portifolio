@@ -13,9 +13,9 @@
 				<h5>Trabalho Realizado</h5>
 				<p>*Desenvolvimento Mobile (Android e IOS)</p><br>
 				<p>*Desenvolvimento do Painel de adminstração do cardápio</p><br>
+				
 				<h5>Download</h5>
 
-				<h5>Download</h5>
 				<p><a href="https://play.google.com/store/apps/details?id=com.apprumo.cardapiorujatai.android">GooglePlay</a></p>
 				<p><a href="https://itunes.apple.com/il/app/cardapio-ru-jatai/id1175560533?mt=8">Itunes</a></p>
 			</div>	

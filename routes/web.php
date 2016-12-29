@@ -12,6 +12,7 @@
 */
 
 Route::resource('/','HomeController');
+Route::post('/contato','HomeController@contato');
 
 Route::get('/inicio', function () {
     return view('inicio');

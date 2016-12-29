@@ -13,7 +13,7 @@
 				<h5>Trabalho Realizado</h5>
 
 				<p>*Desenvolvimento Web</p><br>
-				<p>Confira: <a href="www.pedrocandiru.com.br">www.pedrocandiru.com.br</a></p>
+				<p>Confira: <a href="http://www.pedrocandiru.com.br" target="_blank">www.pedrocandiru.com.br</a></p>
 
 			</div>	
 		</div>	

@@ -350,16 +350,17 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                 <div class="col-md-5 contact-left">
                     <ul>
                       <li><strong>Daniel Leonardo de Souza Teixeira</strong></li>
-                        <li><strong>62 98403-7100 (OI)</strong></li>
-                        <li><strong>64 99965-5333 (VIVO)</strong></li>
+                        <li><strong>(62) 98403-7100 (OI)</strong></li>
+                        <li><strong>(64) 99965-5333 (VIVO)</strong></li>
                         <li><a href="mailto:daniel.fnz@hotmail.com">contato@danielfnz.com.br</a></li>
                     </ul>
                 </div>
                 <div class="col-md-7 contact-right">        
-                    <form>
-                        <input type="text" value="Nome Completo" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Nome Completo';}" required="">
-                        <input type="text" value="E-mail" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'E-mail';}" required="">
-                        <textarea type="text" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Mensagem';}" required="">Mensagem</textarea>
+                    <form action="/contato" method="post">
+                    {{ csrf_field() }}  
+                        <input type="text" name="name" value="Nome Completo" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Nome Completo';}" required="">
+                        <input type="text" name="email" value="E-mail" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'E-mail';}" required="">
+                        <textarea type="text" name="mensagem" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Mensagem';}" required="">Mensagem</textarea>
                         <input type="submit" value="ENVIAR MENSAGEM">
                     </form>
                 </div>

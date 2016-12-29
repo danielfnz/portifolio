@@ -16,7 +16,7 @@ return [
     |
     */
 
-    'driver' => env('MAIL_DRIVER', 'smtp'),
+    'driver' => env('MAIL_DRIVER', 'mailgun'),
 
     /*
     |--------------------------------------------------------------------------
@@ -55,10 +55,7 @@ return [
     |
     */
 
-    'from' => [
-        'address' => 'hello@example.com',
-        'name' => 'Example',
-    ],
+    'from' => ['address' => 'contato@danielfnz.com.br', 'name' => 'Daniel Leonardo'],
 
     /*
     |--------------------------------------------------------------------------
@@ -84,7 +81,7 @@ return [
     |
     */
 
-    'username' => env('MAIL_USERNAME'),
+    'username' => env('contato@danielfnz.com.br'),
 
     /*
     |--------------------------------------------------------------------------
@@ -97,7 +94,7 @@ return [
     |
     */
 
-    'password' => env('MAIL_PASSWORD'),
+    'password' => env('key-0c2ae197858a8b54c44ab58e3ba5d62c'),
 
     /*
     |--------------------------------------------------------------------------

@@ -17,7 +17,7 @@
 				<p>*Desenvolvimento do BackOffice</p><br>
 				<p>*Integração com PagSeguro</p><br>
 				<p>*Integração Apple in-app purchase</p><br>
-				<p>Confira: <a href="www.atlasdehistologia.com.br">www.atlasdehistologia.com.br</a></p>
+				<p>Confira: <a href="http://www.atlasdehistologia.com.br" target="_blank">www.atlasdehistologia.com.br</a></p>
 
 				<h5>Download</h5>
 				<p><a href="https://play.google.com/store/apps/details?id=com.apprumo.atlasdehistologia">GooglePlay</a></p>
