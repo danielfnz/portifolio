@@ -85,7 +85,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                     <h1>Daniel Leonardo</h1>
                     <div class="border"></div>
                     <h2>Programador Júnior</h2>
-                    <a href="#">Download do meu curriculum</a>
+                    <a href="{{url('/downloads/curriculo.pdf')}}" target="_blank">Download do meu curriculum</a>
                 </div>
                 <div class="clearfix"></div>
             </div>
@@ -98,7 +98,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         <div class="container">
             <h3>SOBRE MIM</h3>
             <div class="strip text-center"><img src="images/about.png" alt=" "/></div>
-            <p>Graduação em andamento em Ciência da Computação pela Universidade Federal de Goias(UFG) com conclusão prevista em 03/2017, Programador com ênfase em Desenvolvimento Web e Mobile, teve experiências com as linguagens C, C#, PHP, JAVA e com frameworks como LARAVEL, AngularJS e Ionic.
+            <p>Graduação em andamento em Ciência da Computação pela Universidade Federal de Goias(UFG) com conclusão prevista em 03/2017, Programador com ênfase em Desenvolvimento Web e Mobile, teve experiências com as linguagens C, C#, PHP, JAVA, SQL e com frameworks como LARAVEL, AngularJS e Ionic.
             Atuando ultimamente nos seguintes temas: Simulação 3D de cultivos agroflorestais, desenvolvimento de aplicativos educacionais, desenvolvimento de atlas virtual e ferramentas de verificação de vulnerabilidades em web sites.</p>
                 <ul>
                     <li><a class="fb" href="https://www.facebook.com/danielfnz" target="_blank"></a></li>
@@ -374,7 +374,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     <div class="resume text-center">
         <div class="container">
             <div class="strip text-center"><a href="#"><img src="images/down.png" alt=" "/></a></div>
-            <div class="down"><a href="#">Download do meu curriculum</a></div>
+            <div class="down"><a href="{{url('/downloads/curriculo.pdf')}}" target="_blank">Download do meu curriculum</a></div>
         </div>
     </div>
     <!--//CURRICULUM-->
