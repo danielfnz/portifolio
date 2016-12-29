@@ -27,6 +27,6 @@ class HomeController extends Controller
    
         });
 
-        return View::make('emails.emailEnviado')->with(compact('nome'));
+        //return View::make('emails.emailEnviado')->with(compact('nome'));
     }
 }
