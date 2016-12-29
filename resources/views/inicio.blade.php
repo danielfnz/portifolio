@@ -79,7 +79,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             <!--banner-->
             <div class="banner-info">
                 <div class="banner-left">
-                    <img src="images/minhaFoto.png" alt=""/>
+                    <img src="https://danielfnz-a74bd.firebaseapp.com/minhaFoto.png" alt=""/>
                 </div>
                 <div class="banner-right">
                     <h1>Daniel Leonardo</h1>
