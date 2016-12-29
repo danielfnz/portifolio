@@ -21,7 +21,7 @@ class HomeController extends Controller
         $mensagem = $request->mensagem;
         Mail::send('emails.contatosite', ['mensagem' => $mensagem,'titulo'=> "Contato pelo meu site",'nome'=>$nome,'email'=>$email], function ($message) use($email,$nome)
         {          
-            $message->from($email, $nome);
+            $message->from($email, 'Daniel');
             $message->subject('DanielFnZ - Contato pelo site');     
             $message->to('daniel.fnz@hotmail.com');
    

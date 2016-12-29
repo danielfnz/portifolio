@@ -38,13 +38,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                 <div class="logo">
                     <a href="/"><img src="images/logo.png" alt=""/></a>
                 </div>
-                <div class="top-nav">
-                    <div class="nav-icon">
-                        <a href="#" class="right_bt" id="activator"><span> </span> </a>
-                    </div>
-         
-                </div>
-                <div class="clearfix"> </div>
+                   <div class="clearfix"> </div>
             </div>
             <!--//top-nav-->
             <!--banner-->

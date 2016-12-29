@@ -223,7 +223,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             <div class="gallery-grids">
                 <div class="top-gallery">
                     <div class="col-md-6 gallery-grid gallery1">
-                        <a href="{{url('/portifolio/atlasdehistologia')}}" ><img src="images/portifolio/atlasdehistologia.jpg" class="img-responsive" alt="/">
+                        <a href="{{url('/portifolio/atlasdehistologia')}}" ><img src="https://danielfnz-a74bd.firebaseapp.com/portifolio/atlasdehistologia.jpg" class="img-responsive" alt="/">
                             <div class="textbox">
                                 <h4>Atlas de Histologia</h4>
                                 <p>Desenvolvimento Web+Mobile+Backoffice</p>
@@ -232,7 +232,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                     </div></a>
 
                     <div class="col-md-6 gallery-grid gallery1">
-                        <a href="{{url('/portifolio/pedrocandiru')}}" ><img src="images/portifolio/pedrocandiru.jpg" class="img-responsive" alt="/">
+                        <a href="{{url('/portifolio/pedrocandiru')}}" ><img src="https://danielfnz-a74bd.firebaseapp.com/portifolio/pedrocandiru.jpg" class="img-responsive" alt="/">
                             <div class="textbox">
                                 <h4>Pedro Candirú</h4>
                                 <p>Desenvolvimento Web</p>
@@ -240,7 +240,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                             </div>
                         </div></a>
                     <div class="col-md-6 gallery-grid gallery1">
-                        <a href="{{url('/portifolio/cardapiorujatai')}}" ><img src="images/portifolio/cardapiorujatai.jpg" class="img-responsive" alt="/">
+                        <a href="{{url('/portifolio/cardapiorujatai')}}" ><img src="https://danielfnz-a74bd.firebaseapp.com/portifolio/cardapiorujatai.jpg" class="img-responsive" alt="/">
                             <div class="textbox">
                                 <h4>Cardápio RU Jataí</h4>
                                 <p>Desenvolvimento mobile+Backoffice</p>
@@ -248,7 +248,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                             </div>
                         </div></a>
                     <div class="col-md-6 gallery-grid gallery1">
-                        <a href="{{url('/portifolio/doealimento')}}" ><img src="images/portifolio/doealimento.jpg" class="img-responsive" alt="/">
+                        <a href="{{url('/portifolio/doealimento')}}" ><img src="https://danielfnz-a74bd.firebaseapp.com/portifolio/doealimento.jpg" class="img-responsive" alt="/">
                             <div class="textbox">
                                 <h4>DoeAlimento.org</h4>
                                 <p>Desenvolvimento Android</p>
