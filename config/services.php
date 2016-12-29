@@ -15,8 +15,8 @@ return [
     */
 
     'mailgun' => [
-        'domain' => env('MAILGUN_DOMAIN'),
-        'secret' => env('MAILGUN_SECRET'),
+        'domain' => 'danielfnz.com.br',
+        'secret' => 'key-0c2ae197858a8b54c44ab58e3ba5d62c',
     ],
 
     'ses' => [
