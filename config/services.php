@@ -15,7 +15,7 @@ return [
     */
 
     'mailgun' => [
-        'domain' => 'danielfnz.com.br',
+        'domain' => 'atlasdehistologia.com.br',
         'secret' => 'key-0c2ae197858a8b54c44ab58e3ba5d62c',
     ],
 

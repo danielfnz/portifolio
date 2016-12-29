@@ -55,7 +55,7 @@ return [
     |
     */
 
-    'from' => ['address' => 'contato@danielfnz.com.br', 'name' => 'Daniel Leonardo'],
+    'from' => ['address' => 'postmaster@danielfnz.com.br', 'name' => 'Daniel Leonardo'],
 
     /*
     |--------------------------------------------------------------------------
@@ -81,7 +81,7 @@ return [
     |
     */
 
-    'username' => env('contato@danielfnz.com.br'),
+    'username' => env('postmaster@danielfnz.com.br'),
 
     /*
     |--------------------------------------------------------------------------
