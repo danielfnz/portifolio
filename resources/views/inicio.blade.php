@@ -356,11 +356,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                     </ul>
                 </div>
                 <div class="col-md-7 contact-right">        
-                    <form action="/contato" method="post" name="login_form" validate>
+                    <form action="/contato" method="post" name="login_form">
                     {{ csrf_field() }}  
                         <input type="text" name="name" value="Nome Completo" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Nome Completo';}" required>
-                        <input type="text" name="email" value="E-mail" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'E-mail';}" required>
-                        <textarea type="text" name="mensagem" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Mensagem';}" required ng-disabled="login_form.$invalid" >Mensagem</textarea>
+                        <input type="email" name="email" value="E-mail" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'E-mail';}" required>
+                        <textarea type="text" name="mensagem" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Mensagem';}" required >Mensagem</textarea>
                         <input type="submit" value="ENVIAR MENSAGEM">
                     </form>
                 </div>

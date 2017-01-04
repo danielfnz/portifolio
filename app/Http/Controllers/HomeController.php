@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Posts;
 use Mail;
 use View;
+use Validator;
 
 class HomeController extends Controller
 {
@@ -19,6 +20,20 @@ class HomeController extends Controller
         $nome = $request->name;
         $email = $request->email;
         $mensagem = $request->mensagem;
+
+        $validator = Validator::make($request->all(), [
+            'email' => 'required|email|max:255',
+            'name' => 'required|max:255',
+            'mensagem' => 'required'
+        ]);
+
+        if ($validator->fails()) {
+            $message = $validator->errors();
+            $this->SetStatusCode(404);
+            return $this->RespondWithError($message);
+        }else {
+
+
         Mail::send('emails.contatosite', ['mensagem' => $mensagem,'titulo'=> "Contato pelo meu site",'nome'=>$nome,'email'=>$email], function ($message) use($email,$nome)
         {          
             $message->from($email, $nome);
@@ -28,5 +43,7 @@ class HomeController extends Controller
         });
 
         return View::make('emails.emailEnviado')->with(compact('nome'));
+        
+        }
     }
 }
