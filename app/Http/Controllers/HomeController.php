@@ -27,12 +27,8 @@ class HomeController extends Controller
             'mensagem' => 'required'
         ]);
 
-        if ($validator->fails()) {
-            $message = $validator->errors();
-            return $this->RespondWithError($message);
-        }else {
-
-
+        if (!$validator->fails()) {
+     
         Mail::send('emails.contatosite', ['mensagem' => $mensagem,'titulo'=> "Contato pelo meu site",'nome'=>$nome,'email'=>$email], function ($message) use($email,$nome)
         {          
             $message->from($email, $nome);
