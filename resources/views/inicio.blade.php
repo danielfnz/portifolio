@@ -48,9 +48,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                     <a href="/"><img src="images/logo.png" alt=""/></a>
                 </div>
                 <div class="top-nav">
-                    <div class="nav-icon">
+                 <!--    <div class="nav-icon">
                         <a href="#" class="right_bt" id="activator"><span> </span> </a>
-                    </div>
+                    </div> -->
                     <div class="box" id="box">
                         <div class="box_content">                                                    
                             <div class="box_content_center">
@@ -268,7 +268,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             <div class="strip text-center"><img src="images/test.png" alt=" "/></div>
             <!-- responsiveslides -->
             <!-- responsiveslides -->
-            <div  id="top" class="callbacks_container">
+           <!--  <div  id="top" class="callbacks_container">
                 <ul class="rslides" id="slider3">
                     <li>
                         <div class="test-banner">
@@ -301,7 +301,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                          </div>
                     </li>
                 </ul>
-             </div>
+             </div> -->
         </div>
     </section>
     <div class="client-back"></div>
