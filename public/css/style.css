@@ -2739,7 +2739,7 @@ border:none;
 	}
 	.contact-right form input[type="submit"] {
 	  height: 45px;
-    font-size: 14px;
+    font-size: 5px;
 	  width: 100%;
 	  background: url(../images/mess.png) no-repeat 26px 11px;
 	  }
