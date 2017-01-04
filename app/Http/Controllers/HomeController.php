@@ -29,7 +29,6 @@ class HomeController extends Controller
 
         if ($validator->fails()) {
             $message = $validator->errors();
-            $this->SetStatusCode(404);
             return $this->RespondWithError($message);
         }else {
 
