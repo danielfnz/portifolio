@@ -3,6 +3,35 @@ body {
   	color: #fff;
 }
 
+.btn-custom {
+  background-color: #EC001C;
+  border-color: #EC001C;
+      box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+.btn-custom:hover,
+.btn-custom:focus,
+.btn-custom:active,
+.btn-custom.active {
+  background-color: #d30019;
+  border-color: #b90016;
+}
+.btn-custom.disabled:hover,
+.btn-custom.disabled:focus,
+.btn-custom.disabled:active,
+.btn-custom.disabled.active,
+.btn-custom[disabled]:hover,
+.btn-custom[disabled]:focus,
+.btn-custom[disabled]:active,
+.btn-custom[disabled].active,
+fieldset[disabled] .btn-custom:hover,
+fieldset[disabled] .btn-custom:focus,
+fieldset[disabled] .btn-custom:active,
+fieldset[disabled] .btn-custom.active {
+  background-color: #EC001C;
+  border-color: #EC001C;
+}
+
+
 .navbar-custom {
     background-color:#ac0018;
     color:#ffffff;
@@ -65,13 +94,19 @@ letter-spacing: 12px;
 margin-top: 50px;
 }
 
-.footer p{
-text-align:center;
-font-family: 'Lato', sans-serif;
+.footer {
+    text-align: center;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  line-height: 100px; /* Vertically center the text there */
+  background-color: #000;
+  font-family: 'Lato', sans-serif;
 font-size:18px;
-color:#ffffff;
-margin-top:40px;
-padding: 50px;
-font-weight:400;
 }
+
+.footer > .container {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
 
