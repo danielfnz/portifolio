@@ -2,8 +2,6 @@
     'use strict';
 
     angular.module('app.inicio', [
-    	'ngRoute',
-        'ngMap',
-        'LocalStorageModule'
+        'ngMap'
         ]);
 })();

@@ -1,6 +1,11 @@
 body {
     background-color:#000;
     color: #fff;
+    background:url(../imagens/background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size:cover;
 }
 .conteudo {
     margin-top: 50px;
@@ -99,6 +104,19 @@ fieldset[disabled] .btn-custom.active {
     color: #ac0018;
 }
 
+.cadastro {
+  background-color: rgba(0, 0, 0, 0.7);
+  float: none;
+  margin: 100px auto;
+}
+.cadastro .botoes{
+ padding-top:30px;
+ padding-bottom:30px;
+  float: none;
+  margin: 0 auto;
+}
+
+
 .inventario {
   background-color: #1f1f1f;
   border-color: #fff;
@@ -113,39 +131,145 @@ fieldset[disabled] .btn-custom.active {
   margin: 0px;
 
 }
-.inventario .agua{
- background: url('../imagens/invetorio/agua.png') no-repeat;
+.inventario .Water{
+ background: url('../imagens/inventario/agua.png') no-repeat;
     width: 25%;
     height: 115px;
   border-color: #fff;
   border-style: solid;
   border-width: 1px;
 }
-.inventario .comida{
- background: url('../imagens/invetorio/comida.png') no-repeat;
+.inventario .Food{
+ background: url('../imagens/inventario/comida.png') no-repeat;
     width: 25%;
     height: 115px;
   border-color: #fff;
   border-style: solid;
   border-width: 1px;
 }
-.inventario .medicamento{
- background: url('../imagens/invetorio/medicamento.png') no-repeat;
+.inventario .Medication{
+ background: url('../imagens/inventario/medicamento.png') no-repeat;
     width: 25%;
     height: 115px;
   border-color: #fff;
   border-style: solid;
   border-width: 1px;
 }
-.inventario .municao{
- background: url('../imagens/invetorio/municao.png') no-repeat;
-    width: 25%;
+.inventario .Ammunition{
+ background: url('../imagens/inventario/municao.png') no-repeat;
+  width: 25%;
+  height: 115px;
+  border-color: #fff;
+  border-style: solid;
+  border-width: 1px;
+}
+
+
+.troca-area {
+  border-radius: 25px;
+  margin: 50px;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.troca-area .painel {
+   border-radius: 25px;
+  background-color: #1f1f1f;
+  box-shadow: 0 0 20px 0 rgba(255, 255, 255, 1), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  padding: 30px; 
+}
+
+.troca-area .Water{
+ background: url('../imagens/inventario/agua.png') no-repeat;
+ background-position: center; 
+ width: 100%;
+ height: 115px;
+ border-color: #fff;
+ border-style: solid;
+ border-width: 1px;
+}
+.troca-area .Food{
+ background: url('../imagens/inventario/comida.png') no-repeat;
+     background-position: center; 
+  width: 100%;
+  height: 115px;
+  border-color: #fff;
+  border-style: solid;
+  border-width: 1px;
+}
+.troca-area .Medication{
+ background: url('../imagens/inventario/medicamento.png') no-repeat;
+     background-position: center; 
+    width: 100%;
+    height: 115px;
+  border-color: #fff;
+  border-style: solid;
+  border-width: 1px;
+}
+.troca-area .Ammunition{
+ background: url('../imagens/inventario/municao.png') no-repeat;
+     background-position: center; 
+    width: 100%;
     height: 115px;
   border-color: #fff;
   border-style: solid;
   border-width: 1px;
 }
 
+
+.troca-inventario {
+  border-radius: 25px;
+  margin-top: 50px;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.troca-inventario h2{
+  color:#fff;
+  margin: 0px;
+}
+
+.troca-inventario .painel {
+  background-color: #1f1f1f;
+  box-shadow: 0 0 20px 0 rgba(255, 255, 255, 1), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.troca-inventario .Water{
+ background: url('../imagens/inventario/agua.png') no-repeat;
+  height: 100px;
+  background-position: center; 
+  border-color: #fff;
+  border-style: solid;
+  border-width: 1px;
+}
+.troca-inventario .Food{
+ background: url('../imagens/inventario/comida.png') no-repeat;
+    background-position: center; 
+  height: 100px;
+  border-color: #fff;
+  border-style: solid;
+  border-width: 1px;
+}
+.troca-inventario .Medication{
+ background: url('../imagens/inventario/medicamento.png') no-repeat;
+    background-position: center; 
+  height: 100px;
+  border-color: #fff;
+  border-style: solid;
+  border-width: 1px;
+}
+.troca-inventario .Ammunition{
+ background: url('../imagens/inventario/municao.png') no-repeat;
+    background-position: center; 
+  height: 100px;
+  border-color: #fff;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.buscaInfectado {
+  text-align: center;
+  float: none;
+  margin: 0px auto;
+}
 
 .footer {
     text-align: center;
@@ -163,6 +287,12 @@ fieldset[disabled] .btn-custom.active {
 }
 
 @media(max-width:640px){
+
+.troca-area .painel {
+ width:85%; 
+   float: none;
+  margin: 30px auto;
+}
 
 .inventario {
     width:90%;

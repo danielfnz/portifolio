@@ -2,6 +2,7 @@
     'use strict';
 
     angular.module('app.painel', [
-    	'painel.service',
+  		'ui.select',
+  		'ngSanitize'
         ]);
 })();
