@@ -5,77 +5,110 @@ angular
     .module('app.painel')
     .controller('painelController', painelController);
 
-function painelController($scope,NgMap,PainelService,$rootScope) { 
-   
+function painelController($scope,NgMap,PainelService,$rootScope,Flash,$anchorScroll,$location) { 
+  //Declaração do model de reportar usuario
+  $scope.sobrevivente = {};
 
-  $scope.meusdados = PainelService.MeusDados();
+  //Busca dados do usuario logado
+  PainelService.GetSobrevivente().then(function(items){
+      $scope.meusdados = items;
+
+      //Posição posicaoAtual do sobrevivente para utilizar no marcador no mapa
+      if(items.lonlat!=null){
+        $scope.posicaoAtual = $scope.meusdados.lonlat.replace('POINT (','').replace(')','').replace(' ',',');
+      }
+      else {
+        var message = '<strong> Atualize sua posição atual urgente!</strong> ';
+        Flash.create('danger', message, 0, {class: 'custom-class', id: 'mensagem'}, true);
+        $scope.posicaoAtual = ("0,0");
+
+        //Scroll ate a mensagem, para forcar o sobrevivente ver o alerta.
+        $location.hash('mensagem');
+        $anchorScroll();
+      }
+  });
+  
+  //Busca na API os items do inventario do sobrevivente
   PainelService.GetMyItems().then(function(items){
    $rootScope.inventario = items;
     angular.forEach(items, function(value, key) {
-      $rootScope.meusPontosTotais += (value.item.points * value.quantity);
+      $scope.meusPontosTotais += (value.item.points * value.quantity);
     });
   });
 
-  if($scope.meusdados.lonlat!=null){
-  $scope.posicaoAtual = $scope.meusdados.lonlat.replace('POINT (','').replace(')','').replace(' ',',');
-  }
-
+  //Busca na API todos os sobreviventes para que seja possivel realizar uma busca por nome
+  //Utilizado para reportar sobrevivente infectado
   PainelService.GetAllSobreviventes().then(function(sobreviventes){
   $scope.todosSobreviventes = sobreviventes;
   });
 
+  //===================Mapa de localização atual=========================
   $scope.render = true;
   $scope.show = true;
   $scope.latitude = "";
-  $scope.longitude = "";
-  
+  $scope.longitude = "";  
+
+  //Inicia o mapa
   $scope.$on('mapInitialized', function(evt, evtMap) {
-  $scope.map = evtMap;
+  $scope.map = evtMap
+
+  //Inicia o marcador
   $scope.marker = new google.maps.Marker({position: evt.latLng, map: $scope.map});
+
+  //Função chamada para marcar a nova posição no mapa de localização atual
   $scope.click = function(evt) {
     $scope.show = false;
     $scope.latitude = evt.latLng.lat().toPrecision(8);
     $scope.longitude  = evt.latLng.lng().toPrecision(8);
     $scope.marker.setPosition(evt.latLng);
     $scope.map.panTo(evt.latLng);
-    $scope.map.setZoom(8);
-       
+    $scope.map.setZoom(8);       
     }
   });
+  //=====================================================================
 
-  $scope.sobrevivente = {};
-
+  //Função para atualizar a posição no mapa de localização
   $scope.atualizarPerfil = function atualizarPerfil(){
-    $scope.meusdados.lonlat = "POINT ("+$scope.latitude+" "+$scope.latitude+")";
-    PainelService.SetSobrevivente($scope.meusdados);
+    //Posição no formato esperado pela API
+    $scope.meusdados.lonlat = "POINT ("+$scope.latitude+" "+$scope.longitude+")";
+    $scope.posicaoAtual = $scope.latitude+","+$scope.longitude;
+    //Chama o service responsavel por atualizar a posição
+    PainelService.SetSobrevivente($scope.meusdados).then(function(response){
+      if(response.lonlat!=null) {
+        //Informa o sucesso na atualização da posição
+        var message = '<strong> Posição atual atualizada com sucesso!</strong> ';
+        Flash.create('success', message, 0, {class: 'custom-class', id: 'mensagem'}, true);
+      }
+      else {
+        //Informa a falha na atualização da posição
+        var message = '<strong> Não foi possivel atualizar sua posição atual, tente novamente!</strong> ';
+        Flash.create('danger', message, 0, {class: 'custom-class', id: 'mensagem'}, true);
+      }
+      //Scroll ate a mensagem, para forcar o sobrevivente ver o alerta.
+      $location.hash('mensagem');
+      $anchorScroll();
+    });
   }
 
+  //Função para reportar um sobrevivente com suspeita de infeção pelo virus
   $scope.reportarInfectado = function reportarInfectado(data){
+    //Captura o id do sobrevivente suspeito selecionado pela busca
     var id = data.Infectado.location.replace('http://zssn-backend-example.herokuapp.com/api/people/','');
+    //Chama o service responsavel por reportar sobrevivente infectado
     PainelService.ReportarInfectado(id).then(function(response){
       if(response) {
-        console.log("Voce ja reportou esse cara");
+        var message = '<strong> Você ja reportou esse sobrevivente antes!</strong> ';
+        Flash.create('danger', message, 0, {class: 'custom-class', id: 'mensagem'}, true);
       }
       else {
-      console.log('Reportado');
+        var message = '<strong> Sobrevivente com suspeita de contaminação reportado com sucesso!</strong> ';
+        Flash.create('success', message, 0, {class: 'custom-class', id: 'mensagem'}, true);
       }
+      //Scroll ate a mensagem, para forcar o sobrevivente ver o alerta.
+      $location.hash('mensagem');
+      $anchorScroll();
     });
-
-}
-  $scope.buscarInventorio = function buscarInventorio(data){
-    var id = data.inventario.location.replace('http://zssn-backend-example.herokuapp.com/api/people/','');
-    PainelService.GetItems(id).then(function(items){
-      if(items.length!=0) {
-        console.log(items);
-      }
-      else {
-      console.log('nao tem item');
-      }
-    });
-
-}
-
-
+  }
 }
 
 })();

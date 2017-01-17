@@ -14,6 +14,7 @@
 		$scope.login =  function login(user) {
 			LoginService.GetById(user.identificacao).then(function(data) {
 				if (!data.message) { 
+		
 					LoginService.SetAutenticado(data);
 					$location.path('/painel');
 				} else {

@@ -18,6 +18,7 @@
         service.MeusDados = MeusDados;
         service.ReportarInfectado = ReportarInfectado;
         service.RealizarTroca = RealizarTroca;
+
   
         return service;
  
@@ -29,7 +30,7 @@
            return $http.get('http://zssn-backend-example.herokuapp.com/api/people/'+$rootScope.meuId).then(handleSuccess, handleError('Error getting user by id'));
         }
         function SetSobrevivente(user) {
-            return $http.patch('http://zssn-backend-example.herokuapp.com/api/people/'+user.id+".json", {name:user.nome,age:user.age,gender:user.gender,lonlat:user.lonlat}).then(handleSuccess, handleError('Error updating user'));
+            return $http.patch('http://zssn-backend-example.herokuapp.com/api/people/'+user.id, {name:user.nome,age:user.age,gender:user.gender,lonlat:user.lonlat}).then(handleSuccess, handleError('Error updating user'));
         } 
         function GetMyItems() {
             return $http.get('http://zssn-backend-example.herokuapp.com/api/people/'+$rootScope.meuId+'/properties').then(handleSuccess, handleError('Error getting user by id'));
@@ -45,7 +46,7 @@
         } 
 
         function RealizarTroca(data) {
-            return $http.post('http://zssn-backend-example.herokuapp.com/api/people/'+data.sobrevivente+'/properties/trade_item', {data}).then(handleSuccess, handleError('Error creating user'));
+               return $http.post('http://zssn-backend-example.herokuapp.com/api/people/'+data.person_id+'/properties/trade_item', data).then(handleSuccess, handleError('Error creating user'));
         } 
 
         function handleSuccess(res) {

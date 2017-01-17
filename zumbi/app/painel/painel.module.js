@@ -3,6 +3,7 @@
 
     angular.module('app.painel', [
   		'ui.select',
-  		'ngSanitize'
+  		'ngSanitize',
+  		'ngFlash'
         ]);
 })();
