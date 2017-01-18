@@ -5,10 +5,8 @@ angular
     .module('app.painel')
     .controller('painelController', painelController);
 
-function painelController($scope,NgMap,PainelService,$rootScope,Flash,$anchorScroll,$location) { 
-  //Declaração do model de reportar usuario
-  $scope.sobrevivente = {};
-
+function painelController($scope,NgMap,PainelService,$rootScope, $mdDialog) { 
+ 
   //Busca dados do usuario logado
   PainelService.GetSobrevivente().then(function(items){
       $scope.meusdados = items;
@@ -17,15 +15,20 @@ function painelController($scope,NgMap,PainelService,$rootScope,Flash,$anchorScr
       if(items.lonlat!=null){
         $scope.posicaoAtual = $scope.meusdados.lonlat.replace('POINT (','').replace(')','').replace(' ',',');
       }
-      else {
-        var message = '<strong> Atualize sua posição atual urgente!</strong> ';
-        Flash.create('danger', message, 0, {class: 'custom-class', id: 'mensagem'}, true);
+      else {        
+        $mdDialog.show(
+          $mdDialog.alert()
+            .clickOutsideToClose(true)
+            .title('Atualização necessaria')
+            .textContent('Por favor, atualize sua localização atual')
+            .ok('Ok')
+            // You can specify either sting with query selector
+            .openFrom('#left')
+            // or an element
+            .closeTo(angular.element(document.querySelector('#right')))
+        );
         $scope.posicaoAtual = ("0,0");
-
-        //Scroll ate a mensagem, para forcar o sobrevivente ver o alerta.
-        $location.hash('mensagem');
-        $anchorScroll();
-      }
+     }
   });
   
   //Busca na API os items do inventario do sobrevivente
@@ -36,13 +39,7 @@ function painelController($scope,NgMap,PainelService,$rootScope,Flash,$anchorScr
     });
   });
 
-  //Busca na API todos os sobreviventes para que seja possivel realizar uma busca por nome
-  //Utilizado para reportar sobrevivente infectado
-  PainelService.GetAllSobreviventes().then(function(sobreviventes){
-  $scope.todosSobreviventes = sobreviventes;
-  });
-
-  //===================Mapa de localização atual=========================
+//===================Mapa de localização atual=========================
   $scope.render = true;
   $scope.show = true;
   $scope.latitude = "";
@@ -76,37 +73,32 @@ function painelController($scope,NgMap,PainelService,$rootScope,Flash,$anchorScr
     PainelService.SetSobrevivente($scope.meusdados).then(function(response){
       if(response.lonlat!=null) {
         //Informa o sucesso na atualização da posição
-        var message = '<strong> Posição atual atualizada com sucesso!</strong> ';
-        Flash.create('success', message, 0, {class: 'custom-class', id: 'mensagem'}, true);
+        $mdDialog.show(
+          $mdDialog.alert()
+            .clickOutsideToClose(true)
+            .title('Sucesso')
+            .textContent('Posição atual atualizada com sucesso!')
+            .ok('Ok')
+            // You can specify either sting with query selector
+            .openFrom('#left')
+            // or an element
+            .closeTo(angular.element(document.querySelector('#right')))
+        );
       }
       else {
         //Informa a falha na atualização da posição
-        var message = '<strong> Não foi possivel atualizar sua posição atual, tente novamente!</strong> ';
-        Flash.create('danger', message, 0, {class: 'custom-class', id: 'mensagem'}, true);
+          $mdDialog.show(
+          $mdDialog.alert()
+            .clickOutsideToClose(true)
+            .title('Ocorrou algum erro')
+            .textContent('Falha ao atualizar posição atual')
+            .ok('Ok')
+            // You can specify either sting with query selector
+            .openFrom('#left')
+            // or an element
+            .closeTo(angular.element(document.querySelector('#right')))
+        );
       }
-      //Scroll ate a mensagem, para forcar o sobrevivente ver o alerta.
-      $location.hash('mensagem');
-      $anchorScroll();
-    });
-  }
-
-  //Função para reportar um sobrevivente com suspeita de infeção pelo virus
-  $scope.reportarInfectado = function reportarInfectado(data){
-    //Captura o id do sobrevivente suspeito selecionado pela busca
-    var id = data.Infectado.location.replace('http://zssn-backend-example.herokuapp.com/api/people/','');
-    //Chama o service responsavel por reportar sobrevivente infectado
-    PainelService.ReportarInfectado(id).then(function(response){
-      if(response) {
-        var message = '<strong> Você ja reportou esse sobrevivente antes!</strong> ';
-        Flash.create('danger', message, 0, {class: 'custom-class', id: 'mensagem'}, true);
-      }
-      else {
-        var message = '<strong> Sobrevivente com suspeita de contaminação reportado com sucesso!</strong> ';
-        Flash.create('success', message, 0, {class: 'custom-class', id: 'mensagem'}, true);
-      }
-      //Scroll ate a mensagem, para forcar o sobrevivente ver o alerta.
-      $location.hash('mensagem');
-      $anchorScroll();
     });
   }
 }

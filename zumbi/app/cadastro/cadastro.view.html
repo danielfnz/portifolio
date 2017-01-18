@@ -1,31 +1,29 @@
 <div ng-include src="'app/login/login.view.html'"></div>
-
-<!-- Modal -->
-    <div class="Painel col-md-6">
+  <div class="Painel col-md-6">
       <div class="row">   
-      <h1 style="text-align:center; padding:30px;">Cadastro de Sobreviventes</h1>
-         <form class="form-horizontal">
+      <h1>Cadastro de Sobreviventes</h1>
+         <form class="form-horizontal" id="cadastro" ng-submit="cadastro.$valid;cadastrar(user)">
           <div class="form-group">
             <label class="col-sm-2 control-label">Nome</label>
             <div class="col-sm-9">
-              <input type="text" ng-model="user.person.name" class="form-control" placeholder="Nome">
+              <input type="text" ng-model="user.person.name" class="form-control" placeholder="Nome" required>
             </div>
           </div>
           <div class="form-group">
             <label class="col-sm-2 control-label">Idade</label>
             <div class="col-sm-9">
-              <input type="number" class="form-control" ng-model="user.person.age" placeholder="Idade">
+              <input type="number" class="form-control" ng-model="user.person.age" placeholder="Idade" required>
             </div>
           </div>
           <div class="form-group">
             <label class="col-sm-2 control-label">Sexo</label>
             <div class=" col-sm-9">
               <label>
-                <input type="radio" ng-model="user.person.gender" value="F">
+                <input type="radio" ng-model="user.person.gender" value="F" >
                 Feminino
               </label>
               <label>
-                <input type="radio" ng-model="user.person.gender" value="M">
+                <input type="radio" ng-model="user.person.gender" value="M" required>
                 Masculino
               </label>
             </div>
@@ -45,16 +43,16 @@
         <div class="form-group">
           <label for="inputEmail3" class="col-sm-2 control-label">Localização</label>
            <div class="col-sm-9">
-           <map center="-11.436955216143177,-53.4375" zoom-control="true" zoom="1"  on-click="click()"> </map>     
+           <map center="-11.436955216143177,-53.4375" zoom-control="true" zoom="2"  on-click="click()"> </map>     
          </div>
        </div>
       <div class="botoes col-md-12 text-center">   
         <button type="button" class="btn btn-custom" ng-click="limparInventario()">
           <span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Limpar Inventário
         </button>
-        <button type="submit" class="btn btn-custom" ng-click="cadastro(user)"> <span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Me Cadastrar</button>
+        <button type="submit" class="btn btn-custom" > <span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Me Cadastrar</button>
       </div>
       </form>
   </div>
-    </div>
+</div>
 

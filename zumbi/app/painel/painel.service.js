@@ -18,14 +18,12 @@
         service.MeusDados = MeusDados;
         service.ReportarInfectado = ReportarInfectado;
         service.RealizarTroca = RealizarTroca;
-
   
         return service;
  
         function GetAllSobreviventes() {
             return $http.get('http://zssn-backend-example.herokuapp.com/api/people').then(handleSuccess, handleError('Error getting all users'));
         }
-
         function GetSobrevivente(id) {
            return $http.get('http://zssn-backend-example.herokuapp.com/api/people/'+$rootScope.meuId).then(handleSuccess, handleError('Error getting user by id'));
         }

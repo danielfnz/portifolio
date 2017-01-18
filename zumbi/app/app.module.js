@@ -4,21 +4,15 @@
 	angular.module('app', [
 		'ngRoute',
 		'app.inicio',
+		'app.cadastro',
 		'app.login',
-		'app.painel',
+		'app.painel'
 		
 		])
-	.run(function($rootScope, $route, $routeParams, $location,LoginService) {		
-		$rootScope.$on('$routeChangeStart',function(angularEvent, newUrl){
-			if(newUrl.requerAutenticacao) {
-				if(LoginService.GetAutenticado()!=true){
-					console.log("Não Autenticado");
-					$location.path('/'); 
-				}
-			}
-		})
-	})
-	.config(function($routeProvider) {
+    .config(configRotas)
+    .run(runConfig);
+
+	function configRotas($routeProvider) { 
 		$routeProvider
 		.when("/", {
 			templateUrl : "app/inicio/inicio.view.html",
@@ -26,8 +20,8 @@
 			requerAutenticacao: false
 		})
 		.when("/cadastro", {
-			templateUrl : "app/login/cadastro.view.html",
-			controller:"loginController",
+			templateUrl : "app/cadastro/cadastro.view.html",
+			controller:"cadastroController",
 			requerAutenticacao: false
 		})
 		.when("/painel", {
@@ -36,16 +30,31 @@
 			requerAutenticacao: true
 		})
 		.when("/painel/reportar", {
-			templateUrl : "app/painel/reportar.view.html",
-			controller:"painelController",
+			templateUrl : "app/painel/reportar/reportar.view.html",
+			controller:"reportarController",
 			requerAutenticacao: true
 		})
 		.when("/painel/trocaritem", {
-			templateUrl : "app/painel/trocaritem.view.html",
+			templateUrl : "app/painel/troca/trocaritem.view.html",
 			controller:"trocaController",
 			requerAutenticacao: true
 		})
 
-	});
+		 .otherwise({redirectTo:'/'});
+	}
+
+	function runConfig($rootScope, $route, $routeParams, $location,LoginService) { 
+
+		$rootScope.$on('$routeChangeStart',function(angularEvent, newUrl){
+		//Verifica se a pagina requer autenticação	
+		if(newUrl.requerAutenticacao) {
+			//Se o usuário não estiver autenticado, ele é redirecionado para a pagina inicial
+			if(LoginService.GetAutenticado()!=true){
+				$location.path('/'); 
+			}
+		}
+		});
+	}
+
 
 })();

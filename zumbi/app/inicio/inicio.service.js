@@ -28,15 +28,14 @@
         function GetQuantidadeItemPorPessoa() {
             return $http.get('http://zssn-backend-example.herokuapp.com/api/report/people_inventory').then(handleSuccess, handleError('Error getting all users'));
         }
-
         function GetLocalizacaoAll() {
             return $http.get('http://zssn-backend-example.herokuapp.com/api/people').then(Localizacao, handleError('Error getting all users'));
         }
 
 
-        // private functions
-        function Localizacao(res) {
-         var coordenadas = [];
+    // Função responsavel em colocar as coordenadas em formato certo para serem visualizadas pelo mapa
+    function Localizacao(res) {
+        var coordenadas = [];
 
          angular.forEach(res.data, function(value, key) {
             if(value.lonlat !=null) {
@@ -44,10 +43,10 @@
                 coordenadas.push(coodernada);
             }
         });
-         localStorageService.set('sobreviventes', coordenadas);  
 
+        localStorageService.set('sobreviventes', coordenadas);  
          return coordenadas;
-     }
+    }
 
      function handleSuccess(res) {
         return res.data;
