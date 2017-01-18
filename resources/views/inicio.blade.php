@@ -381,7 +381,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     <!--footer-->
     <footer class="footer">
         <div class="container">
-            <p>Copyright &copy; 2017 Daniel Leonardo. Template by <a href="http://w3layouts.com/"> W3layouts</a></p>
+            <p>Copyright &copy; 2017 Daniel Leonardo de Souza Teixeira</p>
         </div>
     </footer>
     <!--//footer-->
