@@ -12,11 +12,14 @@ body {
     background-attachment: fixed;
    min-height: 100%; 
 }
-.conteudo {
-    margin-top: 50px;
+
+textarea:focus, input:focus, .uneditable-input:focus {   
+    border-color: rgba(229, 103, 23, 0.8) !important;
+    box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075) inset, 0 0 8px rgba(229, 103, 23, 0.6) !important;
+    outline: 0 none !important;
 }
-a:link {
-   color: #green;
+.view {
+    margin-top: 50px;
 }
 
 /*<BOTOES>*/
@@ -32,6 +35,9 @@ a:link {
 .btn-custom.active {
   background-color: #d30019;
   border-color: #b90016;
+}
+.btn-custom:focus,.btn-custom:active {
+   outline: none !important;
 }
 .btn-custom.disabled:hover,
 .btn-custom.disabled:focus,
@@ -389,6 +395,8 @@ padding: 20px;
 
 @media(max-width:640px){
 
+  
+
 .troca-area {
   margin: 10px;
 }
@@ -406,7 +414,6 @@ padding: 20px;
   padding-bottom: 0px;
   margin-bottom: 30px;
 }
-
 
 .troca-area .painel {
   width:85%; 
