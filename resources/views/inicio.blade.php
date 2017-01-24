@@ -21,9 +21,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="robots" content="index, follow">
-    <meta name="description" content="Meu portifolio profissional. Aqui você descobrir um pouco sobre meu trabalho. Daniel Fnz" />
+    <meta name="description" content="Meu portifolio profissional, aqui você descobre um pouco sobre o meu trabalho. Email: ufgdaniel@gmail.com" />
     <meta name="keywords" content="Daniel Leonardo, Daniel Leonardo de Souza, Daniel Leonardo de Souza Teixeira, Desenvolvedor mobile, desenvolvedor de aplicaivos,
-    desenvolvedor android, desenvolvedor ios, programador, desenvolvedor web, rubiataba, jatai, UFG, Jataí" />
+    desenvolvedor android, desenvolvedor ios, programador, desenvolvedor web, rubiataba, jatai, UFG, Jataí, Cardapio Ru Jatai, Pedro Candiru, Doealimento, DoeAlimento.org,
+     Atlas de Histologia, daniel fnz, daniel.fnz, The Histology, Beetech, UFG" />
     <!-- //KEYWORDS -->
     <!-- for-mobile-apps -->
     <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
@@ -352,7 +353,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                       <li><strong>Daniel Leonardo de Souza Teixeira</strong></li>
                         <li>(62) 98403-7100 (OI)</li>
                         <li>(64) 99965-5333 (VIVO)</li>
-                        <li><a href="mailto:daniel.fnz@hotmail.com">contato@danielfnz.com.br</a></li>
+                        <li><a href="mailto:daniel.fnz@hotmail.com">ufgdaniel@gmail.com</a></li>
                     </ul>
                 </div>
                 <div class="col-md-7 contact-right">        
