@@ -58,7 +58,7 @@ class PostsController extends Controller
      */
     public function show($id)
     {
-    $post = Posts::where('slug',(string)$id)->firstOrFail();
+    $post = Posts::find($id);
     return view('blog.individual')->with(compact('post'));
     }
 
