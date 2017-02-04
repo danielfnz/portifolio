@@ -58,10 +58,10 @@ class PostsController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show($slug)
     {
-    $post = Posts::where('slug','=',$id)->firstOrFail();
-    
+    $post = Posts::where('slug','=',$slug)->firstOrFail();
+
     if($post == null) {
         return response()->view('errors.404', [], 404);
     }
