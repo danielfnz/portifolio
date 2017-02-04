@@ -11,11 +11,9 @@
 		</div>
 		<div class="col-md-8 sample-page-left" >		
 			<div class="sample-page-info">
-				<div class="comment-icons">
-					<h1>{{$post->titulo}}</h1>	
-				</div>			
+
 				<article>
-					<p>{{$post->conteudo}}</p>
+					{{$post->conteudo}}
 				</article>
 
 			</div>

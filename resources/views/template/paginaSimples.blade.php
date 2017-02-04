@@ -15,7 +15,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     <!--fonts-->
     <link href='http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
-    <link href="https://raw.githubusercontent.com/jhollingworth/bootstrap-wysihtml5/master/src/bootstrap-wysihtml5.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="{{ URL::asset('css/bootstrap3-wysihtml5.min.css') }}" rel="stylesheet" type="text/css" media="all" />
     <!--//fonts-->
 
     <!-- KEYWORDS -->
@@ -38,7 +38,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     <script type="text/javascript" src="{{ URL::asset('js/circles.js') }}"></script>
     <script type="text/javascript" src="{{ URL::asset('js/responsiveslides.min.js') }}"></script>
     <script type="text/javascript" src="{{ URL::asset('js/functions.js') }}"></script>
-    <script type="text/javascript" src="https://raw.githubusercontent.com/jhollingworth/bootstrap-wysihtml5/master/src/bootstrap-wysihtml5.js"></script>
+    <script type="text/javascript" src="{{ URL::asset('js/bootstrap3-wysihtml5.all.min.js') }}"></script>
   
     <!-- JS -->
 </head>
