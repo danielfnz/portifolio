@@ -15,7 +15,7 @@
 
 				<img src="{{URL::asset($post->imagem)}}" height="200" width="200">
 
-				<p>{!!$post->conteudo!!}</p>
+				<p>{!!$post->conteudo !!}</p>
 
 				<div class="comment-icons">
 					<ul>

@@ -62,13 +62,13 @@ class PostsController extends Controller
     {
     $post = Posts::where('slug','=',$slug)->firstOrFail();
 
-    // if($post == null) {
-    //     return response()->view('errors.404', [], 404);
-    // }
-    // else {
-    //     return view('blog.individual')->with(compact('post'));
-    // }
-    return $post;
+    if($post == null) {
+        return response()->view('errors.404', [], 404);
+    }
+    else {
+        return view('blog.individual')->with(compact('post'));
+    }
+
 
     }
 
