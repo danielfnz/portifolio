@@ -52,15 +52,16 @@ return [
             'prefix' => '',
         ],
 
+
         'mysql' => [
             'driver' => 'mysql',
-            'host' => env('DB_HOST', 'rtzsaka6vivj2zp1.cbetxkdyhwsb.us-east-1.rds.amazonaws.com'),
+            'host' => env('DB_HOST', '127.0.0.1'),
             'port' => env('DB_PORT', '3306'),
-            'database' => env('DB_DATABASE', 'nu99n9m6ef8dh7em'),
-            'username' => env('DB_USERNAME', 'zybk6toqqujp7b60'),
-            'password' => env('DB_PASSWORD', 'yd47f4dyay9g7cev'),
-            'charset' => 'utf8',
-            'collation' => 'utf8_unicode_ci',
+            'database' => env('DB_DATABASE', 'forge'),
+            'username' => env('DB_USERNAME', 'forge'),
+            'password' => env('DB_PASSWORD', ''),
+            'charset' => 'utf8mb4',
+            'collation' => 'utf8mb4_unicode_ci',
             'prefix' => '',
             'strict' => true,
             'engine' => null,
