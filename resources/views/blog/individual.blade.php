@@ -5,7 +5,7 @@
 
 	<div class="sample-page">
 		<div class="container">
-		@if( !$post->count())
+		@if( $post==null)
 		<h5>Conteudo indisponivel</h5>
 		@else
 		@foreach ($post as $post)
