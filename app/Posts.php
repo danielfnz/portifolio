@@ -13,6 +13,7 @@ class Posts extends Model
         'slug',
         'conteudo',
         'imagem',
+        'description',
         'ativo'
     ];
 

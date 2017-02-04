@@ -1,5 +1,6 @@
 @extends('template.paginaSimples')
 @section('title', $post->titulo)
+@section('description', $post->description)
 
 @section('container')
 

@@ -1,5 +1,6 @@
 @extends('template.paginaSimples')
 @section('title', 'CardápioRU - Jataí')
+@section('description', 'CardápioRU - Jataí')
 
 @section('container')
 <div class="sample-page">

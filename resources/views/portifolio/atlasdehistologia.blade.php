@@ -1,5 +1,6 @@
 @extends('template.paginaSimples')
 @section('title', 'Atlas de Histologia')
+@section('description', 'Atlas de Histologia')
 
 @section('container')
 <div class="sample-page">

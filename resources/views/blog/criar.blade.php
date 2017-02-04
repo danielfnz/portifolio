@@ -22,6 +22,11 @@
 				</div>
 
 				<div class="form-group">
+					<label for="titulo">Descricao:</label>
+					<input type="text" class="form-control" name="description"  placeholder="Description">
+				</div>
+
+				<div class="form-group">
 					<label for="creditos">Conteudo</label>
 				<textarea id="textarea" class="textarea" name="conteudo" style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;" ></textarea>
 				</div>

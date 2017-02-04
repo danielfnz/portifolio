@@ -1,5 +1,6 @@
 @extends('template.paginaSimples')
 @section('title', 'DoAlimento.org')
+@section('description', 'DoAlimento.org')
 
 @section('container')
 <div class="sample-page">

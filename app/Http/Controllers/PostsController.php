@@ -44,6 +44,7 @@ class PostsController extends Controller
         'slug' => 'required|max:255',
         'conteudo' => 'required|max:3000',
         'imagem' => 'required|max:500',
+        'description' => 'required|max:500',
         'ativo' => 'required'
         ]);
 

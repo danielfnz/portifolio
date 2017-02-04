@@ -1,5 +1,7 @@
 @extends('template.paginaSimples')
 @section('title', 'Blog')
+@section('description', 'Aqui você fica por dentro das melhores tecnologias de desenvolvimento existentes no mercado')
+
 
 @section('container')
 	<div class="sample-page">
