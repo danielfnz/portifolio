@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Posts;
 use View;
+use Redirect;
 
 class PostsController extends Controller
 {
@@ -27,7 +28,7 @@ class PostsController extends Controller
      */
     public function create()
     {
-        //
+       return View::make('blog.criar'));
     }
 
     /**
@@ -38,7 +39,15 @@ class PostsController extends Controller
      */
     public function store(Request $request)
     {
-        //
+      $this->validate($request, [
+        'titulo' => 'required|max:255',
+        'slug' => 'required|max:255',
+        'conteudo' => 'required|max:3000'
+        ]);
+
+    Posts::create($request->all());
+    return redirect()->action('PostsController@index');
+
     }
 
     /**
@@ -47,9 +56,9 @@ class PostsController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($slug)
+    public function show($id)
     {
-    $post = Posts::where('slug',(string)$slug)->firstOrFail();
+    $post = Posts::where('slug',(string)$id)->firstOrFail();
     return view('blog.individual')->with(compact('post'));
     }
 
