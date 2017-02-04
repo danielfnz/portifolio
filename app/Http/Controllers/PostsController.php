@@ -60,7 +60,7 @@ class PostsController extends Controller
      */
     public function show($id)
     {
-    $post = Posts::where('slug','=',$id)->first();
+    $post = Posts::where('slug','=',$id)->firstOrFail();
     
     if($post == null) {
         return response()->view('errors.404', [], 404);
