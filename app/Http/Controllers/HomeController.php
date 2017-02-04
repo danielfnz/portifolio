@@ -12,7 +12,7 @@ class HomeController extends Controller
 {
     public function index()
     {
-        $postsrecentes = Posts::all()->orderBy('created_at', 'desc');
+        $postsrecentes = Posts::orderBy('created_at', 'desc')->get();
         return view('inicio')->with(compact('postsrecentes'));
     }
     public function contato(Request $request)

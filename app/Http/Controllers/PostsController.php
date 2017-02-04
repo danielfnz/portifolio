@@ -16,8 +16,8 @@ class PostsController extends Controller
      */
     public function index()
     {
-        $posts = Posts::all()->orderBy('created_at', 'desc');
-        $postsrecentes = Posts::all()->orderBy('created_at', 'desc');
+        $posts = Posts::orderBy('created_at', 'desc')->get();
+        $postsrecentes = Posts::orderBy('created_at', 'desc')->get();
         return view('blog.inicio')->with(compact('posts','postsrecentes'));
     }
 
@@ -60,7 +60,7 @@ class PostsController extends Controller
      */
     public function show($slug)
     {
-    $postsrecentes = Posts::all()->orderBy('created_at', 'desc');
+    $postsrecentes = Posts::orderBy('created_at', 'desc')->get();
     $post = Posts::where('slug','=',$slug)->firstOrFail();
 
     if($post == null) {
