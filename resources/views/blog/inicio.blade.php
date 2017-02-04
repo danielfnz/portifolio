@@ -15,11 +15,8 @@
 				@foreach( $posts as $posts )
 				<div class="sample-page-info">
 					<div class="comment-icons">
-						<a href="{{url('/blog/')}}/{{$posts->slug}}" style="text-decoration: none"><h5>{{$posts->titulo}}</h5></a>
-						<ul>							
-							<li><span class="clndr"></span>{{ $posts->created_at->format('d/m/Y ') }}</li>
-							<!-- <li><span class="cmnts"></span> <a href="#">5 comments</a></li> -->
-						</ul>
+						<a href="{{url('/blog/')}}/{{$posts->slug}}" style="text-decoration: none"><h2>{{$posts->titulo}}</h2></a>
+					
 					</div>			
 			<article>
 				{!! str_limit($posts->conteudo, $limit = 1500, $end = '....... <a href='.url("/".$posts->slug).'>Ver artigo completo</a>') !!}
