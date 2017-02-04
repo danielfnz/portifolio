@@ -42,7 +42,9 @@ class PostsController extends Controller
       $this->validate($request, [
         'titulo' => 'required|max:255',
         'slug' => 'required|max:255',
-        'conteudo' => 'required|max:3000'
+        'conteudo' => 'required|max:3000',
+        'imagem' => 'required|max:500',
+        'ativo' => 'required'
         ]);
 
     Posts::create($request->all());

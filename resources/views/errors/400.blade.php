@@ -36,7 +36,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             <div class="top-header row">
                 <!--top-nav-->
                 <div class="logo">
-                    <a href="/"><img src="images/logo.png" alt=""/></a>
+                    <a href="/"><img href="{{ URL::asset('imagens/logo.png') }}" alt=""/></a>
                 </div>
                    <div class="clearfix"> </div>
             </div>
