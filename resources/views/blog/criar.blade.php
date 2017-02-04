@@ -5,7 +5,7 @@
 <div class="sample-page">
 	<div class="container">
 		<div class="sam-head text-center">
-			<h3>Criar novo Post</h3>
+			<h3>Criar novo Artigo</h3>
 			<div class="strip text-center"><img src="{{url('/images/blog.png')}}" alt=" "/></div>
 		</div>
 		<div class="col-md-8 sample-page-left" >

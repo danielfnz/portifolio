@@ -13,7 +13,7 @@
 			<div class="sample-page-info">
 
 				<article>
-					{{$post->conteudo}}
+					{!! $post->conteudo !!}
 				</article>
 
 			</div>
