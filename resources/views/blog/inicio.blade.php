@@ -18,8 +18,8 @@
 						<a href="{{url('/blog/')}}/{{$posts->slug}}" style="text-decoration: none"><h1>{{$posts->titulo}}</h1></a>
 					
 					</div>			
-			<article>
-				{!! str_limit($posts->conteudo, $limit = 1500, $end = '....... <a href='.url("/".$posts->slug).'>Ler artigo completo</a>') !!}
+			<article class="artigo">
+				{!! str_limit($posts->conteudo, $limit = 400, $end = '....... <a href='.url("/blog/".$posts->slug).'>Ler artigo completo</a>') !!}
 			</article>
 
 				</div>

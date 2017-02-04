@@ -12,7 +12,7 @@
 		<div class="col-md-8 sample-page-left" >		
 			<div class="sample-page-info">
 
-				<article>
+				<article class="artigo">
 					{!! $post->conteudo !!}
 				</article>
 
@@ -20,6 +20,7 @@
 		</div>	
 		<div class="col-md-4 sample-page-right">
 			<div class="recent-posts">
+			<h4>Postagens Recentes</h4>
 				@foreach( $postsrecentes as $postsrecentes )
 				<div class="recent-posts-info">
 					<div class="posts-left">

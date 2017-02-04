@@ -60,7 +60,7 @@ class PostsController extends Controller
      */
     public function show($slug)
     {
-    $postsrecentes = Posts::orderBy('created_at', 'desc')->get();
+    $postsrecentes = Posts::all();
     $post = Posts::where('slug','=',$slug)->firstOrFail();
 
     if($post == null) {
