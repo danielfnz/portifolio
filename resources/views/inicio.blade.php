@@ -321,7 +321,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             @foreach( $postsrecentes as $postsrecentes )
             <div class="col-md-4 blog-text-info">
                 <div class="blog-grid">
-                    <a href="{{url('/blog/')}}/{{$postsrecentes->slug}}"><img src="{{url('/images/blog')}}/{{$postsrecentes->imagem}}" alt=""/></a>
+                    <a href="{{url('/blog/')}}/{{$postsrecentes->slug}}"><img src="{{URL::asset($postsrecentes->imagem)}}" alt=""/></a>
                     <div class="blog-text">
                         <a href="{{url('/blog/')}}/{{$postsrecentes->slug}}">{{$postsrecentes->titulo}}</a>
                         <div class="stripa"></div>
