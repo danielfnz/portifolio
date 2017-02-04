@@ -15,12 +15,13 @@
 				@foreach( $posts as $posts )
 				<div class="sample-page-info">
 					<div class="comment-icons">
-						<a href="{{url('/blog/')}}/{{$posts->slug}}" style="text-decoration: none"><h2>{{$posts->titulo}}</h2></a>
+						<a href="{{url('/blog/')}}/{{$posts->slug}}" style="text-decoration: none"><h1>{{$posts->titulo}}</h1></a>
 					
 					</div>			
 			<article>
 				{!! str_limit($posts->conteudo, $limit = 1500, $end = '....... <a href='.url("/".$posts->slug).'>Ver artigo completo</a>') !!}
 			</article>
+
 				</div>
 				@endforeach
 				@endif
@@ -34,7 +35,7 @@
 					@foreach( $postsrecentes as $postsrecentes )
 					<div class="recent-posts-info">
 						<div class="posts-left">
-							<a href="{{url('/blog/')}}/{{$postsrecentes->slug}}"> <img src="{{url('/images/blog')}}/{{$postsrecentes->imagem}}" alt=""/> </a>
+						<a href="{{url('/blog/')}}/{{$postsrecentes->slug}}"> <img src="{{URL::asset($postsrecentes->imagem)}}" alt="{{$postsrecentes->titulo}}"/> </a>
 						</div>
 						<div class="posts-right">
 							<label>{{ $postsrecentes->created_at->format('d/m/Y') }}</label>
