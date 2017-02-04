@@ -4,13 +4,7 @@
 @section('container')
 
 <div class="sample-page">
-	<div class="container">
-		@if( $post==null)
-		<div class="sam-head text-center">
-			<h3>Artigo não encontrado!</h3>
-			<div class="strip text-center"><img src="{{url('/images/blog.png')}}" alt=" "/></div>
-		</div>
-		@else
+	<div class="container">	
 		@foreach ($post as $post)
 		<div class="sam-head text-center">
 			<h3>{{$post->titulo}}</h3>
@@ -35,7 +29,6 @@
 				
 				<div class="clearfix"> </div>
 				@endforeach
-				@endif
 			</div>
 		</div>
 	</div>	

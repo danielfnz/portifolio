@@ -59,7 +59,14 @@ class PostsController extends Controller
     public function show($id)
     {
     $post = Posts::find($id);
-    return view('blog.individual')->with(compact('post'));
+    if($post == null) {
+        return response()->view('errors.custom', [], 404);
+    }
+    else {
+        return view('blog.individual')->with(compact('post'));
+    }
+
+
     }
 
     /**
