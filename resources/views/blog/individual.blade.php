@@ -1,10 +1,13 @@
 @extends('template.paginaSimples')
-@section('title', 'post')
+@section('title', 'testeee')
 
 @section('container')
 
 	<div class="sample-page">
 		<div class="container">
+		@if ( !$post->count() )
+		<h5>Conteudo indisponivel</h5>
+		@else
 		@foreach ($post as $post)
 			<div class="sam-head text-center">
 				<h3>{{$post->titulo}}</h3>
@@ -13,7 +16,7 @@
 			<div class="col-md-8 sample-page-left" >
 				<div class="sample-page-info">
 
-			 <img src="{{URL::asset($posts->imagem)}}" height="200" width="200">
+			 <img src="{{URL::asset($post->imagem)}}" height="200" width="200">
 
 					<p>{!!$post->conteudo!!}</p>
 					
@@ -167,7 +170,8 @@
 				</div>
 			</div>
 			<div class="clearfix"> </div>
+				@endif
 		</div>	
 	</div>
 @endsection
-      @endforeach
+@endforeach
