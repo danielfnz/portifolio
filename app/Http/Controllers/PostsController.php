@@ -49,8 +49,8 @@ class PostsController extends Controller
      */
     public function show($id)
     {
-    $posts = Posts::find($id);
-    return view('blog.individual')->with(compact('posts'));
+    $post = Posts::find($id);
+    return view('blog.individual')->with(compact('post'));
     }
 
     /**
