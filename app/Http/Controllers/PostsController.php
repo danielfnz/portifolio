@@ -60,7 +60,7 @@ class PostsController extends Controller
     {
     $post = Posts::find($id);
     if($post == null) {
-        return response()->view('errors.custom', [], 404);
+        return response()->view('errors.404', [], 404);
     }
     else {
         return view('blog.individual')->with(compact('post'));

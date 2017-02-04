@@ -10,7 +10,7 @@
 		</div>
 		<div class="col-md-8 sample-page-left" >
 			
-			<form method="POST" action="{{ url('/blog/store') }}">
+		<form method="PUT" action="{{ url('/blog/store') }}">
 				{{ csrf_field() }}
 				<div class="form-group">
 					<label for="titulo">Titulo:</label>
