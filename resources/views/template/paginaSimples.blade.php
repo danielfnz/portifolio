@@ -9,7 +9,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <head>
     <title> @yield('title') - Daniel Leonardo de Souza Teixeira</title>
     <!--CSS-->
-    <link href="{{ URL::asset('css/bootstrap.css') }}" rel="stylesheet" type="text/css" media="all" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link href="{{ URL::asset('css/style.css') }}" rel="stylesheet" type="text/css" media="all" />
     <!--//CSS-->
     <!--fonts-->
@@ -31,6 +31,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     <!-- //for-mobile-apps -->
     <!-- JS -->
     <script type="text/javascript" src="{{ URL::asset('js/jquery.min.js') }}"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script type="text/javascript" src="{{ URL::asset('js/move-top.js') }}"></script>
     <script type="text/javascript" src="{{ URL::asset('js/easing.js') }}"></script>
     <script type="text/javascript" src="{{ URL::asset('js/classie.js') }}"></script>
@@ -46,7 +47,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <div class="banner page-head" id="home">
 	<div class="container"> 
 		<div class="top-header row">
-				<!--top-nav---->
 			<div class="logo">
 				<a href="/"><img src="{{ URL::asset('images/logo.png') }}" alt=""/></a>
 			</div>

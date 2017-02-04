@@ -60,13 +60,14 @@ class PostsController extends Controller
      */
     public function show($slug)
     {
+    $postsrecentes = Posts::all();
     $post = Posts::where('slug','=',$slug)->firstOrFail();
 
     if($post == null) {
         return response()->view('errors.404', [], 404);
     }
     else {
-        return view('blog.individual')->with(compact('post'));
+        return view('blog.individual')->with(compact('post','postsrecentes'));
     }
 
 
