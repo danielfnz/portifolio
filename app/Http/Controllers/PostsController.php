@@ -28,7 +28,7 @@ class PostsController extends Controller
      */
     public function create()
     {
-       return View::make('blog.criar'));
+       return View::make('blog.criar');
     }
 
     /**
