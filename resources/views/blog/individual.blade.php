@@ -1,26 +1,22 @@
+@foreach ($post as $post)
 @extends('template.paginaSimples')
-@section('title', 'Blog')
+@section('title', '{{$post->titulo}}')
 
 @section('container')
+
 	<div class="sample-page">
 		<div class="container">
 			<div class="sam-head text-center">
-				<h3>OUR BLOG</h3>
+				<h3>{{$post->titulo}}</h3>
 				<div class="strip text-center"><img src="public/images/blog.png" alt=" "/></div>
 			</div>
 			<div class="col-md-8 sample-page-left" >
 				<div class="sample-page-info">
-					<img src="public/images/123.jpg" alt=""/>
-					<h5>CONDIMENTUM FRINGILLA, FRINGILLA CONDIMENTUM,FINIBUS BONORUM MALORUM, DONEC UT QUAM LIGULA, SED NISI LOBORTIS.</h5>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  
-						Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, 
-						consectetur adipisicing elit.There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration  
-						in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum,
-						you need to be sure there isn't anything embarrassing hidden in the middle of text.</p>  
-					<h5>TINCIDUNT NEC, PRETIUM MALESUADA, AUCTOR LIBERO RUTRUM,</h5>
-					<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration  
-						in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum,
-						you need to be sure there isn't anything embarrassing hidden in the middle of text.</p> 
+
+			 <img src="{{URL::asset($posts->imagem)}}" height="200" width="200">
+
+					<p>{{$post->conteudo}}</p>  
+					
 					<div class="comment-icons">
 						<ul>
 							<li><span class="d"></span><a href="#">Lorem ipsum dolor sit consectetur</a> </li>

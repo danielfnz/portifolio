@@ -19,6 +19,10 @@ Route::get('/inicio', function () {
 });
 Route::resource('/blog','PostsController');
 
+Route::get('/blog/diferenca-frontend-backend', function () {
+    return view('blog.individual');
+});
+
 Route::get('/portifolio', function () {
     return view('portifolio.portifolio');
 });
