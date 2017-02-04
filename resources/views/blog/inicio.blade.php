@@ -19,7 +19,7 @@
 					
 					</div>			
 			<article>
-				{!! str_limit($posts->conteudo, $limit = 1500, $end = '....... <a href='.url("/".$posts->slug).'>Ver artigo completo</a>') !!}
+				{!! str_limit($posts->conteudo, $limit = 1500, $end = '....... <a href='.url("/".$posts->slug).'>Ler artigo completo</a>') !!}
 			</article>
 
 				</div>

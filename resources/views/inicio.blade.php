@@ -325,7 +325,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                     <div class="blog-text">
                         <a href="{{url('/blog/')}}/{{$postsrecentes->slug}}">{{$postsrecentes->titulo}}</a>
                         <div class="stripa"></div>
-                        <p>{!! str_limit($postsrecentes->conteudo, $limit = 100, $end = '....... <a href='.url("/".$postsrecentes->slug).'>Ver artigo completo</a>') !!}</p>
+                        <p>{!! str_limit($postsrecentes->conteudo, $limit = 100, $end = '....... <a href='.url("/".$postsrecentes->slug).'>Ler artigo completo</a>') !!}</p>
                         </div>
                         <div class="blog-pos">
                             <p>{{ $postsrecentes->created_at->format('d') }}<span>{{ $postsrecentes->created_at->format('M') }}</span></p>
