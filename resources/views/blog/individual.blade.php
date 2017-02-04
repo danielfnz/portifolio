@@ -1,11 +1,11 @@
-@foreach ($post as $post)
 @extends('template.paginaSimples')
-@section('title', '{{$post->titulo}}')
+@section('title', 'post')
 
 @section('container')
 
 	<div class="sample-page">
 		<div class="container">
+		@foreach ($post as $posts)
 			<div class="sam-head text-center">
 				<h3>{{$post->titulo}}</h3>
 				<div class="strip text-center"><img src="public/images/blog.png" alt=" "/></div>
@@ -15,7 +15,7 @@
 
 			 <img src="{{URL::asset($posts->imagem)}}" height="200" width="200">
 
-					<p>{{$post->conteudo}}</p>  
+					<p>{!!$post->conteudo!!}</p>
 					
 					<div class="comment-icons">
 						<ul>
