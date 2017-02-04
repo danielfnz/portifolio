@@ -5,7 +5,6 @@
 
 <div class="sample-page">
 	<div class="container">	
-		@foreach ($post as $post)
 		<div class="sam-head text-center">
 			<h3>{{$post->titulo}}</h3>
 			<div class="strip text-center"><img src="public/images/blog.png" alt=" "/></div>
@@ -28,7 +27,6 @@
 				</div>
 				
 				<div class="clearfix"> </div>
-				@endforeach
 			</div>
 		</div>
 	</div>	
