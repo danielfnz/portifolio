@@ -47,9 +47,9 @@ class PostsController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show($slug)
     {
-    $post = Posts::find($id);
+    $post = Posts::where('slug',(string)$slug)->firstOrFail();
     return view('blog.individual')->with(compact('post'));
     }
 
